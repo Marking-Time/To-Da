@@ -10,19 +10,21 @@
 <h2>The localStorage Property</h2>
 
 <p>Saved name is:</p>
-<p>test</p>
-<p id="first"></p>
-<p id="last"></p>
-<p id="desc"></p>
+<!-- setting format for JS to insert data into -->
+<p id="first" style="display: inline;"></p>
+<p id="last" style="display: inline;"></p>
+<p id="desc" style="display: inline;"></p>
 
 <script>
     // Set Items
     localStorage.setItem("firstname","StrangeName")
     localStorage.setItem("lastname", "Smith");
-    localStorage.setItem("description", "has experince in HTML, CSS, JS, Python")
+    localStorage.setItem("description", "has experince in: HTML, CSS, JS and Python")
+
     // Retrieve
     document.getElementById("first").innerHTML = localStorage.getItem("firstname");
     document.getElementById("last").innerHTML = localStorage.getItem("lastname");
+    document.getElementById("desc").innerHTML = localStorage.getItem("description");
 
 </script>
     
