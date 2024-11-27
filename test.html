@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+<h1>The Window Object</h1>
+<h2>The localStorage Property</h2>
+
+<p>Saved name is:</p>
+<p>test</p>
+<p id="first"></p>
+<p id="last"></p>
+<p id="desc"></p>
+
+<script>
+    // Set Items
+    localStorage.setItem("firstname","StrangeName")
+    localStorage.setItem("lastname", "Smith");
+    localStorage.setItem("description", "has experince in HTML, CSS, JS, Python")
+    // Retrieve
+    document.getElementById("first").innerHTML = localStorage.getItem("firstname");
+    document.getElementById("last").innerHTML = localStorage.getItem("lastname");
+
+</script>
+    
+</body>
+</html>
