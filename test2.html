@@ -10,41 +10,37 @@
 <h2>The localStorage Property</h2>
 
 <!-- form -->
- <form onsubmit="save_data()">
-    <label for="">First Name</label>
-    <input type="text" id="fname" name="fname">
-    <br>
-    <label for="">Last Name</label>
-    <input type="text" id="lname" name="lname">
-    <br>
-    <label for="">Desccription</label>
-    <input type="text" id="descr" name="descr">
-    <br>
-    <input type="submit">
- </form>
+<form onsubmit="save_data()">
+    <label for="form_first">First Name</label>
+    <input type="text" id="form_first">
+    <input type="submit" >
 
+</form>
 
 
 <p>Saved name is:</p>
 <!-- setting format for JS to insert data into -->
-<p id="first" style="display: inline;"></p>
+ <p>first</p>
+<p id="first" style="display: block;"></p>
+<br>
+<p>second</p>
+<p id="second" style="display: block;"></p>
 <!-- <p id="last" style="display: inline;"></p> -->
 <!-- <p id="desc" style="display: inline;"></p> -->
 <!-- <p id="list_id" style="display: block;">List from localStorage: </p> -->
-
-<h3>Get data from form</h3>
-
 
 
 <script>
     localStorage.clear();
 
     function save_data() {
-       let input_fname = document.getElementById("fname"); 
-       localStorage.setItem("first_name",input_fname);
+    //    let input_fname = document.getElementById("form_first"); 
+       localStorage.setItem("first_name",document.getElementById("form_first"));
        document.getElementById("first").innerHTML = localStorage.getItem("first_name");
 
     }
+    localStorage.setItem("test", "mark");
+    document.getElementById("second").innerHTML = localStorage.getItem("test");
     // list_name.push();
 
     // Set Items
