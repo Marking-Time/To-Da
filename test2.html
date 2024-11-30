@@ -11,8 +11,8 @@
 
 <!-- form -->
 <form onsubmit="save_data()">
-    <label for="form_first">First Name</label>
-    <input type="text" id="form_first">
+    <label for="form_name">First Name</label>
+    <input type="text" id="form_name" name="form_first">
     <input type="submit" >
 
 </form>
@@ -34,8 +34,8 @@
     localStorage.clear();
 
     function save_data() {
-    //    let input_fname = document.getElementById("form_first"); 
-       localStorage.setItem("first_name",document.getElementById("form_first"));
+       let input_fname = document.getElementById("form_name"); 
+       localStorage.setItem("first_name",input_fname.value);
        document.getElementById("first").innerHTML = localStorage.getItem("first_name");
 
     }
