@@ -31,14 +31,14 @@
 
 
 <script>
-    localStorage.clear();
+    // localStorage.clear();
 
     function save_data() {
        let input_fname = document.getElementById("form_name"); 
        localStorage.setItem("first_name",input_fname.value);
-       document.getElementById("first").innerHTML = localStorage.getItem("first_name");
-
+    //    document.getElementById("first").innerHTML = localStorage.getItem("first_name");
     }
+    document.getElementById("first").innerHTML = localStorage.getItem("first_name");
     localStorage.setItem("test", "mark");
     document.getElementById("second").innerHTML = localStorage.getItem("test");
     // list_name.push();
