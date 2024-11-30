@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
+    <title>Test 2</title>
 </head>
 <body>
 <h1>The Window Object</h1>
 <h2>The localStorage Property</h2>
 
 <!-- form -->
- <form>
+ <form onsubmit="save_data()">
     <label for="">First Name</label>
     <input type="text" id="fname" name="fname">
     <br>
@@ -28,30 +28,36 @@
 <p>Saved name is:</p>
 <!-- setting format for JS to insert data into -->
 <p id="first" style="display: inline;"></p>
-<p id="last" style="display: inline;"></p>
-<p id="desc" style="display: inline;"></p>
-<p id="list_id" style="display: block;">List from localStorage: </p>
+<!-- <p id="last" style="display: inline;"></p> -->
+<!-- <p id="desc" style="display: inline;"></p> -->
+<!-- <p id="list_id" style="display: block;">List from localStorage: </p> -->
 
 <h3>Get data from form</h3>
 
 
 
 <script>
-    let inner_list = ["this is a list in a llist"]
-    let list_name = ["one"];    
-    list_name.push();
+    localStorage.clear();
+
+    function save_data() {
+       let input_fname = document.getElementById("fname"); 
+       localStorage.setItem("first_name",input_fname);
+       document.getElementById("first").innerHTML = localStorage.getItem("first_name");
+
+    }
+    // list_name.push();
 
     // Set Items
-    localStorage.setItem("firstname","StrangeName")
-    localStorage.setItem("lastname", "Smith");
-    localStorage.setItem("description", "has experince in: HTML, CSS, JS and Python")
-    localStorage.setItem("list", list_name)
+    // localStorage.setItem("firstname","StrangeName")
+    // localStorage.setItem("lastname", "Smith");
+    // localStorage.setItem("description", "has experince in: HTML, CSS, JS and Python")
+    // localStorage.setItem("list", list_name)
 
     // Retrieve
-    document.getElementById("first").innerHTML = localStorage.getItem("firstname");
-    document.getElementById("last").innerHTML = localStorage.getItem("lastname");
-    document.getElementById("desc").innerHTML = localStorage.getItem("description");
-    document.getElementById("list_id").innerHTML = localStorage.getItem("list");
+    // document.getElementById("first").innerHTML = localStorage.getItem("firstname");
+    // document.getElementById("last").innerHTML = localStorage.getItem("lastname");
+    // document.getElementById("desc").innerHTML = localStorage.getItem("description");
+    // document.getElementById("list_id").innerHTML = localStorage.getItem("list");
 
 
 </script>
