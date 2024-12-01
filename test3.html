@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 2</title>
+    <title>Test 3</title>
 </head>
 <body>
 <h1>The Window Object</h1>
@@ -21,7 +21,7 @@
 </form>
 
 <p>Saved name is:</p>
-<!-- setting format for JS to insert data into -->
+<!-- setting elements for JS to insert data into -->
  <p style="display: inline;">first: </p>
 <p id="first" style="display: inline;"></p><br>
 <p style="display: inline;">Last: </p>
@@ -29,9 +29,6 @@
 <p style="display: inline;">Description: </p>
 <p id="description" style="display: inline;"></p><br>
 
-<!-- 
-<p style="display: inline;">second: </p>
-<p id="second" style="display: inline;"></p> -->
 
 <script>
     // localStorage.clear();
@@ -50,24 +47,12 @@
     document.getElementById("first").innerHTML = localStorage.getItem("first_name");
     document.getElementById("Last").innerHTML = localStorage.getItem("last_name");
     document.getElementById("description").innerHTML = localStorage.getItem("description1")
-    // localStorage.setItem("test", "mark");
 
+    function setup() {
+        if (localStorage.getItem("order_number") == "1")
+        
 
-    // document.getElementById("second").innerHTML = localStorage.getItem("test");
-    // list_name.push();
-
-    // Set Items
-    // localStorage.setItem("firstname","StrangeName")
-    // localStorage.setItem("lastname", "Smith");
-    // localStorage.setItem("description", "has experince in: HTML, CSS, JS and Python")
-    // localStorage.setItem("list", list_name)
-
-    // Retrieve
-    // document.getElementById("first").innerHTML = localStorage.getItem("firstname");
-    // document.getElementById("last").innerHTML = localStorage.getItem("lastname");
-    // document.getElementById("desc").innerHTML = localStorage.getItem("description");
-    // document.getElementById("list_id").innerHTML = localStorage.getItem("list");
-
+    }
 
 </script>
     
