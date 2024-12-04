@@ -3,10 +3,10 @@
 let increment;
 let ordersList = [];
 let date;
-let customer;
-let description;
-let tech;
-let status;
+let customer = "User_name";
+let description = "description of problem";
+let tech = "assigned tech";
+let status = "Unassigned/In Process/Completed";
 let upate;
 let order = [];
 
@@ -25,6 +25,8 @@ function Create() {
         increment += 1;
     }
 
-
+    date = date_now();
+    order = [date,customer, description, tech,];
+    localStorage.setItem(icrement, order);
 
 }
