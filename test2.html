@@ -12,16 +12,15 @@
 <!-- form -->
 <form onsubmit="save_data()">
     <label for="form_name">First Name</label>
-    <input type="text" id="form_name" name="form_first"><br>
+    <input type="text" id="form_first" name="form_first"><br>
     <label for="form_last">Last Name</label>
     <input type="text" id="form_last"><br>
     <label for="descr">Description</label>
-    <input type="text" id="descr"><br>
+    <input type="text" id="form_descr"><br>
     <input type="submit" >
 </form>
 
-<p>Saved name is:</p>
-<!-- setting format for JS to insert data into -->
+<!-- setting elements for JS to insert data into -->
  <p style="display: inline;">first: </p>
 <p id="first" style="display: inline;"></p><br>
 <p style="display: inline;">Last: </p>
@@ -29,45 +28,28 @@
 <p style="display: inline;">Description: </p>
 <p id="description" style="display: inline;"></p><br>
 
-<!-- 
-<p style="display: inline;">second: </p>
-<p id="second" style="display: inline;"></p> -->
-
 <script>
     // localStorage.clear();
 
     function save_data() {
-       let input_fname = document.getElementById("form_name"); 
+       let input_fname = document.getElementById("form_first"); 
        localStorage.setItem("first_name",input_fname.value);
 
        let input_lname = document.getElementById("form_last");
        localStorage.setItem("last_name",input_lname.value);
 
-       let input_description = document.getElementById("descr");
-       localStorage.setItem("description1",input_descr.value);
+       let input_descr = document.getElementById("form_descr");
+       localStorage.setItem("descript",input_descr.value);
     //    document.getElementById("first").innerHTML = localStorage.getItem("first_name");
     }
     document.getElementById("first").innerHTML = localStorage.getItem("first_name");
     document.getElementById("Last").innerHTML = localStorage.getItem("last_name");
-    document.getElementById("description").innerHTML = localStorage.getItem("description1")
-    // localStorage.setItem("test", "mark");
+    document.getElementById("description").innerHTML = localStorage.getItem("descript")
 
+    function setup() {
+        if (localStorage.getItem("order_number") == "1");
 
-    // document.getElementById("second").innerHTML = localStorage.getItem("test");
-    // list_name.push();
-
-    // Set Items
-    // localStorage.setItem("firstname","StrangeName")
-    // localStorage.setItem("lastname", "Smith");
-    // localStorage.setItem("description", "has experince in: HTML, CSS, JS and Python")
-    // localStorage.setItem("list", list_name)
-
-    // Retrieve
-    // document.getElementById("first").innerHTML = localStorage.getItem("firstname");
-    // document.getElementById("last").innerHTML = localStorage.getItem("lastname");
-    // document.getElementById("desc").innerHTML = localStorage.getItem("description");
-    // document.getElementById("list_id").innerHTML = localStorage.getItem("list");
-
+        }
 
 </script>
     
