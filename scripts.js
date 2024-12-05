@@ -1,5 +1,6 @@
 //  CRUD functions:
 //  CRUD -Create
+let initiated;
 let increment;
 let ordersList = [];
 let date;
@@ -9,6 +10,14 @@ let tech = "assigned tech";
 let status = "Unassigned/In Process/Completed";
 let upate;
 let order = [];
+
+// Check to see if data in localstorage
+function isInitiated() {
+    if (localStorage.key('initiated')) {
+        return true;
+    }
+
+}
 
 //  Returns a string of the current date and time in local time zone
 function date_now() {
