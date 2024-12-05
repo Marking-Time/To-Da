@@ -14,7 +14,9 @@ let order = [];
 function date_now() {
     let d1 = new Date();
     d1.toUTCString();
-    return d1
+    let d2 = d1.toString();
+    d2 = d2.slice(0,24);
+    return d2
 }
 
 function Create() {
