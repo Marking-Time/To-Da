@@ -14,9 +14,10 @@ let order = [];
 // Check to see if data in localstorage
 function isInitiated() {
     if (localStorage.key('initiated')) {
-        return true;
+        increment = localStorage.getItem('increment');
+        console.log(increment);
+        return increment;
     }
-
 }
 
 //  Returns a string of the current date and time in local time zone
