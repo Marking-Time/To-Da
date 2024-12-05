@@ -25,7 +25,18 @@
 
 <!-- form 2 -->
 <form action=onsubmit="save_order()">
-    <label for=""></label>
+    <label for="customer">Customer</label><input id="customer" type="text" required>
+    <label for="description">Description</label>
+    <textarea name="" id="description" rows="5" cols="50"></textarea>
+    <!-- <input id="description" type="text"required > -->
+
+
+    <label for="tech">Technician</label><input id="tech" type="text" required value=" ">
+    <label for="status">Status</label><input id="status" type="text" value="Unassigned">
+    <!-- <label for=""></label><input type="text">
+    <label for=""></label><input type="text"> -->
+
+    <input type="submit" >
 
 </form>
 
