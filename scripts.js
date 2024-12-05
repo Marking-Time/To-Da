@@ -15,6 +15,7 @@ let order = [];
 function isInitiated() {
     if (localStorage.key('initiated')) {
         increment = localStorage.getItem('increment');
+        increment = Number(increment);
         console.log(increment);
         return increment;
     }
