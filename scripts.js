@@ -44,9 +44,4 @@ function save_order() {
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber)
 
-
-
-    // order = [orderNumber,date,customer, description, tech,];
-    // localStorage.setItem(increment, order);
-
 }

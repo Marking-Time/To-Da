@@ -15,16 +15,15 @@
     <label for="customer">Customer</label><input id="customer" type="text" required>
     <label for="description">Description</label>
     <textarea name="" id="description" rows="5" cols="50"></textarea>
-    <!-- <input id="description" type="text"required > -->
-
-
-    <label for="tech">Technician</label><input id="tech" type="text" required value=" ">
-    <label for="status">Status</label><input id="status" type="text" value="Unassigned">
-    <!-- <label for=""></label><input type="text">
-    <label for=""></label><input type="text"> -->
-
+    <label for="tech">Technician</label><input id="tech" type="text" required value="Unassigned">
+    <label for="status">Status</label>
+     <select name="status" id="status">
+        <option value="Open">Open</option>
+        <option value="Closed">Closed</option>
+        <option value="In Process">In Process</option>
+        <option value="Pending">Pending</option>
+     </select>
     <input type="submit" >
-
 </form>
 
 
