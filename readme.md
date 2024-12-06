@@ -4,7 +4,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 |     Description          |  Time     |
 | ------------------------ | --------- |
 | Set up test env for  forms using test and test2  |     2     |
-| Test local storage for lists including embedded lists |  .25 |
+| Test local storage for lists including embedded arrays |  .25 |
 | Save data to local storage from form with JS |  4 |
 | Begin setting up application with JS inquiry for order_number  | 1 |
 | Continue setting up application in test - get data from form, save to localStorage - partial round trip  | 3 |
