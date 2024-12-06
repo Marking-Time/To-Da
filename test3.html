@@ -12,9 +12,9 @@
 
 <!-- form 2 -->
 <form onsubmit="save_order()">
-    <label for="customer">Customer</label><input id="customer" type="text" required>
-    <label for="description">Description</label>
-    <textarea name="" id="description" rows="5" cols="50"></textarea>
+    <label for="customer">Customer  <span> *</span></label><input id="customer" type="text" required>
+    <label for="description">Description  <span>*</span></label>
+    <textarea name="description" id="description" rows="5" cols="50" required></textarea>
     <label for="tech">Technician</label><input id="tech" type="text" required value="Unassigned">
     <label for="status">Status</label>
      <select name="status" id="status">
@@ -24,6 +24,7 @@
         <option value="Pending">Pending</option>
      </select>
     <input type="submit" >
+    <p>Required *</p>
 </form>
 
 
