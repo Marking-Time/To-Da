@@ -1,15 +1,15 @@
 //  CRUD functions:
 //  CRUD -Create
-let initiated;
-let increment;
-let ordersList = [];
-let date;
-let customer = "User_name";
-let description = "description of problem";
-let tech = "assigned tech";
-let status = "Unassigned/In Process/Completed";
-let upate;
-let order = [];
+// let initiated;
+// let increment;
+// let ordersList = [];
+// let date;
+// let customer = "User_name";
+// let description = "description of problem";
+// let tech = "assigned tech";
+// let status = "Unassigned/In Process/Completed";
+// let upate;
+// let order = [];
 
 // Check to see if data in localstorage
 function isInitiated() {
@@ -30,16 +30,25 @@ function date_now() {
     return d2
 }
 
-function Create() {
-    if (localStorage.key(orderIncrement)) {
-        increment =  localStorage.getItem(orderIncrement);        
-    } else {
-        localStorage.setItem("orderIncrement","0");
-        increment += 1;
-    }
+function save_order() {
+    // if (localStorage.key(orderIncrement)) {
+    //     increment =  localStorage.getItem(orderIncrement);        
+    // } else {
+    //     localStorage.setItem("orderIncrement","0");
+    //     increment += 1;
+    // }
+    const orderNumber = localStorage.getItem(increment);
+    orderNumber +=1;
+    const customer = document.getElementById("customer");
+    const description = document.getElementById("description");
+    const tech = document.getElementById("tech");
+    const status = document.getElementById("status")
+    const order = [customer, description, tech, status];
+    localStorage.setItem(orderNumber, order);
 
-    date = date_now();
-    order = [date,customer, description, tech,];
-    localStorage.setItem(icrement, order);
+
+    // date = date_now();
+    // order = [orderNumber,date,customer, description, tech,];
+    // localStorage.setItem(increment, order);
 
 }
