@@ -42,6 +42,7 @@ function save_order() {
     const status = document.getElementById("status")
     const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
+    localStorage.setItem('increment',orderNumber)
 
 
 
