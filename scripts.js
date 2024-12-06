@@ -31,23 +31,20 @@ function date_now() {
 }
 
 function save_order() {
-    // if (localStorage.key(orderIncrement)) {
-    //     increment =  localStorage.getItem(orderIncrement);        
-    // } else {
-    //     localStorage.setItem("orderIncrement","0");
-    //     increment += 1;
-    // }
-    const orderNumber = localStorage.getItem(increment);
+
+    date = date_now();
+    let orderNumber = localStorage.getItem('increment');
+    orderNumber = Number(orderNumber);
     orderNumber +=1;
     const customer = document.getElementById("customer");
     const description = document.getElementById("description");
     const tech = document.getElementById("tech");
     const status = document.getElementById("status")
-    const order = [customer, description, tech, status];
+    const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
 
 
-    // date = date_now();
+
     // order = [orderNumber,date,customer, description, tech,];
     // localStorage.setItem(increment, order);
 

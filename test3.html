@@ -9,19 +9,6 @@
 <h1>The Window Object</h1>
 <h2>The localStorage Property</h2>
 
-<!-- form -->
-<!-- <form onsubmit="save_data()">
-    <label for="form_first">First Name</label>
-    <input type="text" id="form_first" name="form_first"><br>
-
-    <label for="form_last">Last Name</label>
-    <input type="text" id="form_last"><br>
-
-    <label for="form_descr">Description</label>
-    <input type="text" id="form_descr"><br>
-
-    <input type="submit" >
-</form> -->
 
 <!-- form 2 -->
 <form onsubmit="save_order()">
@@ -49,31 +36,7 @@
 <p style="display: inline;">Description: </p>
 <p id="description" style="display: inline;"></p><br> -->
 
-<script >
-    function save_order() {
-    // if (localStorage.key(orderIncrement)) {
-    //     increment =  localStorage.getItem(orderIncrement);        
-    // } else {
-    //     localStorage.setItem("orderIncrement","0");
-    //     increment += 1;
-    // }
-    // const orderNumber = localStorage.getItem(increment);
-    // orderNumber +=1;
-    const orderNumber = 1
-    const customer = document.getElementById("customer");
-    const description = document.getElementById("description");
-    const tech = document.getElementById("tech");
-    const status = document.getElementById("status")
-    const order = [customer, description, tech, status];
-    localStorage.setItem("orderNumber", "order");
-
-
-    // date = date_now();
-    // order = [orderNumber,date,customer, description, tech,];
-    // localStorage.setItem(increment, order);
-
-}
-</script>
+<script src="scripts.js"></script>
     
 </body>
 </html>
