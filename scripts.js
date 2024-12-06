@@ -30,6 +30,16 @@ function date_now() {
     return d2
 }
 
+// The follwing add to ordersList and remove from ordersList
+// They need to called from within the save_order() function
+function add_order(increment) {
+    let orders =  localStorage.getItem('ordersList')
+    console.log(orders);
+    orders = orders.split(',');
+    console.log(orders);
+    
+}
+
 function save_order() {
 
     date = date_now();
@@ -45,3 +55,5 @@ function save_order() {
     localStorage.setItem('increment',orderNumber)
 
 }
+
+
