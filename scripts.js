@@ -37,7 +37,8 @@ function add_order(increment) {
     console.log(orders);
     orders = orders.split(',');
     console.log(orders);
-    
+    orders.push(increment);
+    console.log(orders);
 }
 
 function save_order() {
