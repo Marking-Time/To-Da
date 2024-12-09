@@ -32,13 +32,13 @@ function date_now() {
 
 // The follwing add to ordersList and remove from ordersList
 // They need to called from within the save_order() function
-function add_order(orderNumber) {
+function add_order() {
     let orders =  localStorage.getItem('ordersList')
     console.log(orders);
     orders = orders.split(',');
-    console.log(orders);
+    // console.log(orders);
     orders.push(orderNumber);
-    console.log(orders);
+    // console.log(orders);
     return orders;
 }
 
