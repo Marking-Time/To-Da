@@ -9,5 +9,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | Begin setting up application with JS inquiry for order_number  | 1 |
 | Continue setting up application in test - get data from form, save to localStorage - partial round trip  | 3 |
 | Begin add_orders | 1 |
+| Continue testing add_orders | 1 |
+
 
 
