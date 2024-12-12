@@ -33,8 +33,12 @@ function date_now() {
 // The follwing add to ordersList and remove from ordersList
 // They need to called from within the save_order() function
 function add_order() {
+    let orderNumber = localStorage.getItem('increment');
+    orderNumber = Number(orderNumber);
+    orderNumber +=1;
+
     let orders =  localStorage.getItem('ordersList')
-    console.log(orders);
+    // console.log(orders);
     orders = orders.split(',');
     // console.log(orders);
     orders = orders.push(orderNumber);
@@ -57,8 +61,8 @@ function save_order() {
     const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
-    order2save = add_order();
-    // localStorage.setItem("ordersList",order2save);
+    const order2save = add_order();
+    localStorage.setItem("ordersList",order2save);
 
 }
 
