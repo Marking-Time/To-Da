@@ -54,15 +54,25 @@ function save_order() {
     let orderNumber = localStorage.getItem('increment');
     orderNumber = Number(orderNumber);
     orderNumber +=1;
+    // console.log(orderNumber);
+
+
+
+
     const customer = document.getElementById("customer");
     const description = document.getElementById("description");
     const tech = document.getElementById("tech");
-    const status = document.getElementById("status")
+    const status = document.getElementById("status");
     const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
-    let order2save = Array();
+
+
+    let order2save = [];
+    order2save.push(localStorage.getItem('ordersList'));
+    // console.log(typeof order2save);
     order2save.push(orderNumber);
+    // console.log(order2save);
 
     
     localStorage.setItem("ordersList",order2save);
