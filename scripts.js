@@ -43,7 +43,7 @@ function add_order() {
     // console.log(orders);
     orders = orders.push(orderNumber);
     // console.log(orders);
-    localStorage.setItem("ordersList",orders);
+    // localStorage.setItem("ordersList",orders);
 
     return orders;
 }
@@ -61,7 +61,7 @@ function save_order() {
     const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
-    const order2save = add_order();
+    let order2save = add_order();
     localStorage.setItem("ordersList",order2save);
 
 }
