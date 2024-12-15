@@ -61,9 +61,13 @@ function save_order() {
     const order = [date, customer.value, description.value, tech.value, status.value];
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
-    let order2save = add_order();
+    const order2save = Array();
+    order2save.push(orderNumber);
+
+    
     localStorage.setItem("ordersList",order2save);
 
+    console.log(order2save);
 }
 
 
