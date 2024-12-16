@@ -77,7 +77,7 @@ function save_order() {
     
     localStorage.setItem("ordersList",order2save);
 
-    console.log(order2save);
+    // console.log(order2save);
 }
 
 
