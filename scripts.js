@@ -1,15 +1,5 @@
 //  CRUD functions:
 //  CRUD -Create
-// let initiated;
-// let increment;
-// let ordersList = [];
-// let date;
-// let customer = "User_name";
-// let description = "description of problem";
-// let tech = "assigned tech";
-// let status = "Unassigned/In Process/Completed";
-// let upate;
-// let order = [];
 
 // Check to see if data in localstorage
 function isInitiated() {
@@ -17,7 +7,7 @@ function isInitiated() {
         increment = localStorage.getItem('increment');
         increment = Number(increment);
         console.log(increment);
-        return increment;
+        // return increment;
     }
 }
 
@@ -54,11 +44,7 @@ function save_order() {
     let orderNumber = localStorage.getItem('increment');
     orderNumber = Number(orderNumber);
     orderNumber +=1;
-    // console.log(orderNumber);
-
-
-
-
+    
     const customer = document.getElementById("customer");
     const description = document.getElementById("description");
     const tech = document.getElementById("tech");
@@ -67,17 +53,12 @@ function save_order() {
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
 
-
     let order2save = [];
     order2save.push(localStorage.getItem('ordersList'));
-    // console.log(typeof order2save);
     order2save.push(orderNumber);
-    // console.log(order2save);
-
     
     localStorage.setItem("ordersList",order2save);
 
-    // console.log(order2save);
 }
 
 
