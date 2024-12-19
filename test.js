@@ -16,10 +16,25 @@ function display_data() {
     const description   =   document.createTextNode("This is a description");
     displayDescription.appendChild(description);
 
+    const displayTechnician = document.createElement("p");
+    displayTechnician.setAttribute("style", "display:inline");
+    const technician   =   document.createTextNode("Unassigned");
+    displayDescription.appendChild(technician);
+
+    const displayStatus = document.createElement("p");
+    displayStatus.setAttribute("style", "display:inline");
+    const status   =   document.createTextNode("Open");
+    displayDescription.appendChild(status);
+
+
+
 
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
     displayRow.appendChild(displayDescription);
+    displayRow.appendChild(displayTechnician);
+    displayRow.appendChild(displayStatus);
+
 
     const currentDiv = document.getElementById("display");
     document.body.insertBefore(displayRow,currentDiv);
