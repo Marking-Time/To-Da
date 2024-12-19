@@ -11,7 +11,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | Date | Begin add_orders | 1 |
 | Date | Continue testing add_orders | 1 |
 | 12/12/2024 | Continue testing add_orders | .25 |
-| 12/16/2024 | add_order and save_order working | 1 |
+| 12/16/2024 | add_order and save_order working - CRUD-Create complete| 1 |
 | 12/17/2024 | Testing display_data, createElement and appendChild  in test.js with test3.html| 1 |
 | 12/19/2024 | Begin working on CRUD-Read. Completed displaying single row | 1.5 |
 
