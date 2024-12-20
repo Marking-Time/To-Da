@@ -13,21 +13,18 @@ function display_data() {
 
     const displayDescription = document.createElement("p");
     displayDescription.setAttribute("style", "display:inline");
-    const description   =   document.createTextNode("This is a description");
+    const description = document.createTextNode("This is a description");
     displayDescription.appendChild(description);
 
     const displayTechnician = document.createElement("p");
     displayTechnician.setAttribute("style", "display:inline");
-    const technician   =   document.createTextNode("Unassigned");
-    displayDescription.appendChild(technician);
+    const technician = document.createTextNode("Unassigned");
+    displayTechnician.appendChild(technician);
 
     const displayStatus = document.createElement("p");
     displayStatus.setAttribute("style", "display:inline");
-    const status   =   document.createTextNode("Open");
-    displayDescription.appendChild(status);
-
-
-
+    const status = document.createTextNode("Open");
+    displayStatus.appendChild(status);
 
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
