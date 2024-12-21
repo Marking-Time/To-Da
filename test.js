@@ -2,27 +2,27 @@ function display_data() {
     const displayRow = document.createElement("div");
 
     const displayDate = document.createElement("p");
-    displayDate.setAttribute("style","display:inline");
+    displayDate.setAttribute("class","grid-container");
     const date = document.createTextNode("Mon Dec 16 2024");
     displayDate.appendChild(date);
 
     const displayCustomer = document.createElement("p");
-    displayCustomer.setAttribute("style","display:inline");
+    displayCustomer.setAttribute("class","grid-container");
     const customer = document.createTextNode("Room 248");
     displayCustomer.appendChild(customer);
 
     const displayDescription = document.createElement("p");
-    displayDescription.setAttribute("style", "display:inline");
+    displayDescription.setAttribute("class", "grid-container");
     const description = document.createTextNode("This is a description");
     displayDescription.appendChild(description);
 
     const displayTechnician = document.createElement("p");
-    displayTechnician.setAttribute("style", "display:inline");
+    displayTechnician.setAttribute("class", "grid-container");
     const technician = document.createTextNode("Unassigned");
     displayTechnician.appendChild(technician);
 
     const displayStatus = document.createElement("p");
-    displayStatus.setAttribute("style", "display:inline");
+    displayStatus.setAttribute("class", "grid-container");
     const status = document.createTextNode("Open");
     displayStatus.appendChild(status);
 
