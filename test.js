@@ -32,7 +32,8 @@ function display_data() {
     displayRow.appendChild(displayTechnician);
     displayRow.appendChild(displayStatus);
 
+    const parentDiv = document.getElementById("display").parentNode;
 
     const currentDiv = document.getElementById("display");
-    document.body.insertBefore(displayRow,currentDiv);
+    parentDiv.insertBefore(displayRow,currentDiv);
 }
