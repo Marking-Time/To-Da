@@ -1,4 +1,6 @@
 function display_data() {
+    let getOrders = localStorage.getItem("ordersList");
+
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
 
