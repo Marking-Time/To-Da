@@ -59,7 +59,7 @@ function save_order() {
     
     localStorage.setItem("ordersList",order2save);
 
-// }
+ }
 // function getLSOrders() {
 //     let getOrders = localStorage.getItem("ordersList");
 //     getOrders = getOrders[0].split(','); 
@@ -102,5 +102,3 @@ function save_order() {
 //     const currentDiv = document.getElementById("display");
 //     parentDiv.insertBefore(displayRow,currentDiv);
 // }
-
-
