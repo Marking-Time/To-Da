@@ -1,5 +1,6 @@
 function display_data() {
     let getOrders = localStorage.getItem("ordersList");
+    getOrders = getOrders[0].split(','); 
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
