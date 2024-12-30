@@ -1,14 +1,10 @@
 
-function getLSOrders() {
+function get_LS_Order_Number() {
     let getOrders = localStorage.getItem("ordersList");
     getOrders = getOrders[0].split(','); 
-    for (let i = 0; i < getOrders.length; i++){
-        let dateText = getOrders[1];
-        let customerText = getOrders[2];
-        let descreiptionText = getOrders[3];
-        let assignedText = getOrders[4];
-        let statusText = getOrders[5];
-    }
+    getOrders.map( function(item) {
+        alert(item);
+    })
 }
 
 function display_data() {
