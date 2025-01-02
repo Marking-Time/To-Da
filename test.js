@@ -1,6 +1,6 @@
 
 function get_LS_Order_Number() {
-    let getOrders = localStorage.getItem("ordersList");
+    globalThis.getOrders = localStorage.getItem("ordersList");
     getOrders = getOrders[0].split(','); 
     getOrders.map( function(item) {
         alert(item);
