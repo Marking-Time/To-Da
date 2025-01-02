@@ -1,10 +1,11 @@
 
 function get_LS_Order_Number() {
     globalThis.getOrders = localStorage.getItem("ordersList");
-    getOrders = getOrders[0].split(','); 
-    getOrders.map( function(item) {
-        alert(item);
-    })
+    getOrders = getOrders.split(','); 
+    return getOrders;
+    // getOrders.map( function(item) {
+    //     alert(item);
+    // }
 }
 
 function display_data() {
