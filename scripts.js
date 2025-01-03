@@ -27,13 +27,10 @@ function add_order() {
     orderNumber = Number(orderNumber);
     orderNumber +=1;
 
-    let orders =  localStorage.getItem('ordersList')
-    // console.log(orders);
+    let orders =  localStorage.getItem('ordersList');
     orders = orders.split(',');
-    // console.log(orders);
     orders = orders.push(orderNumber);
-    // console.log(orders);
-    // localStorage.setItem("ordersList",orders);
+
 
     return orders;
 }
@@ -60,45 +57,46 @@ function save_order() {
     localStorage.setItem("ordersList",order2save);
 
  }
-// function getLSOrders() {
-//     let getOrders = localStorage.getItem("ordersList");
-//     getOrders = getOrders[0].split(','); 
-//     // for ()
-// }
+// gets data from local storage and returns an array of order numbers
+function get_LS_ordersList() {
+    getOrders = localStorage.getItem("ordersList");
+    getOrders = getOrders.split(','); 
+    return getOrders;
+}
 
-// // displays data from local storage
-// function display_data() {
-//     const displayRow = document.createElement("div");
-//     displayRow.setAttribute("class", "grid-container");
+function display_data() {
 
-//     const displayDate = document.createElement("p");
-//     const date = document.createTextNode("Mon Dec 16 2024");
-//     displayDate.appendChild(date);
+    const displayRow = document.createElement("div");
+    displayRow.setAttribute("class", "grid-container");
 
-//     const displayCustomer = document.createElement("p");
-//     const customer = document.createTextNode("Room 248");
-//     displayCustomer.appendChild(customer);
+    const displayDate = document.createElement("p");
+    const date = document.createTextNode("Mon Dec 16 2024");
+    displayDate.appendChild(date);
 
-//     const displayDescription = document.createElement("p");
-//     const description = document.createTextNode("This is a description");
-//     displayDescription.appendChild(description);
+    const displayCustomer = document.createElement("p");
+    const customer = document.createTextNode("Room 248");
+    displayCustomer.appendChild(customer);
 
-//     const displayTechnician = document.createElement("p");
-//     const technician = document.createTextNode("Unassigned");
-//     displayTechnician.appendChild(technician);
+    const displayDescription = document.createElement("p");
+    const description = document.createTextNode("This is a description");
+    displayDescription.appendChild(description);
 
-//     const displayStatus = document.createElement("p");
-//     const status = document.createTextNode("Open");
-//     displayStatus.appendChild(status);
+    const displayTechnician = document.createElement("p");
+    const technician = document.createTextNode("Unassigned");
+    displayTechnician.appendChild(technician);
 
-//     displayRow.appendChild(displayDate);
-//     displayRow.appendChild(displayCustomer);
-//     displayRow.appendChild(displayDescription);
-//     displayRow.appendChild(displayTechnician);
-//     displayRow.appendChild(displayStatus);
+    const displayStatus = document.createElement("p");
+    const status = document.createTextNode("Open");
+    displayStatus.appendChild(status);
 
-//     const parentDiv = document.getElementById("display").parentNode;
+    displayRow.appendChild(displayDate);
+    displayRow.appendChild(displayCustomer);
+    displayRow.appendChild(displayDescription);
+    displayRow.appendChild(displayTechnician);
+    displayRow.appendChild(displayStatus);
 
-//     const currentDiv = document.getElementById("display");
-//     parentDiv.insertBefore(displayRow,currentDiv);
-// }
+    const parentDiv = document.getElementById("display").parentNode;
+
+    const currentDiv = document.getElementById("display");
+    parentDiv.insertBefore(displayRow,currentDiv);
+}
