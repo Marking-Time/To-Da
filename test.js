@@ -1,11 +1,8 @@
-
+// gets data from local storage and returns an array of order numbers
 function get_LS_Order_Number() {
-    globalThis.getOrders = localStorage.getItem("ordersList");
+    getOrders = localStorage.getItem("ordersList");
     getOrders = getOrders.split(','); 
     return getOrders;
-    // getOrders.map( function(item) {
-    //     alert(item);
-    // }
 }
 
 function display_data() {
