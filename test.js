@@ -9,7 +9,11 @@ function set_variables() {
     getOrders = get_LS_ordersList();
 
     for (let i = 0; i < getOrders.length; i++) {
-        console.log(getOrders[i]);
+        // console.log(getOrders[i]);
+        if (i != "0") {
+            var date = localStorage.getItem("i");
+            console.log(date);
+        }
     }
 
 }

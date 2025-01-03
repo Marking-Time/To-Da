@@ -17,6 +17,6 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 12/20/2024 | Testing cross brwswer support for saved html - Thanks Hacker News | 1.5 |
 | 12/21/2024 | Work on styling with css grid | 3.5 |
 | 1/2/2025 | Work on retirving data from local storage for display | 1 |
-
+| 1/3/2025 | Work on retirving data from local storage for display | 3 |
 
 
