@@ -1,12 +1,11 @@
 // gets data from local storage and returns an array of order numbers
-function get_LS_Order_Number() {
+function get_LS_ordersList() {
     getOrders = localStorage.getItem("ordersList");
     getOrders = getOrders.split(','); 
     return getOrders;
 }
 
 function display_data() {
-
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
