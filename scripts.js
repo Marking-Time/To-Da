@@ -2,7 +2,7 @@
 //  CRUD -Create
 
 // Check to see if data in localstorage
-function isInitiated() {
+function is_Initiated() {
     if (localStorage.key('initiated')) {
         increment = localStorage.getItem('increment');
         increment = Number(increment);
@@ -57,6 +57,8 @@ function save_order() {
     localStorage.setItem("ordersList",order2save);
 
  }
+
+//  
 // gets data from local storage and returns an array of order numbers
 function get_LS_ordersList() {
     getOrders = localStorage.getItem("ordersList");

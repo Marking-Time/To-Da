@@ -5,6 +5,15 @@ function get_LS_ordersList() {
     return getOrders;
 }
 
+function set_variables() {
+    getOrders = get_LS_ordersList();
+
+    for (let i = 0; i < getOrders.length; i++) {
+        console.log(getOrders[i]);
+    }
+
+}
+
 function display_data() {
 
     const displayRow = document.createElement("div");
