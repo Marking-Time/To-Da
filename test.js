@@ -14,6 +14,13 @@ function set_variables() {
             orderRow = localStorage.getItem(getOrders[i]);
             orderRow = orderRow.split(',');
             console.log(orderRow);
+            rowDate = orderRow[0];
+            rowCustomer = orderRow[1];
+            rowDescription = orderRow[2];
+            rowAssigned = orderRow[3];
+            rowStatus = orderRow[4];
+
+            display_data();
             
         }
     }
@@ -26,23 +33,23 @@ function display_data() {
     displayRow.setAttribute("class", "grid-container");
 
     const displayDate = document.createElement("p");
-    const date = document.createTextNode("Mon Dec 16 2024");
+    const date = document.createTextNode(rowDate);
     displayDate.appendChild(date);
 
     const displayCustomer = document.createElement("p");
-    const customer = document.createTextNode("Room 248");
+    const customer = document.createTextNode(rowCustomer);
     displayCustomer.appendChild(customer);
 
     const displayDescription = document.createElement("p");
-    const description = document.createTextNode("This is a description");
+    const description = document.createTextNode(rowDescription);
     displayDescription.appendChild(description);
 
     const displayTechnician = document.createElement("p");
-    const technician = document.createTextNode("Unassigned");
+    const technician = document.createTextNode(rowAssigned);
     displayTechnician.appendChild(technician);
 
     const displayStatus = document.createElement("p");
-    const status = document.createTextNode("Open");
+    const status = document.createTextNode(rowStatus);
     displayStatus.appendChild(status);
 
     displayRow.appendChild(displayDate);
