@@ -11,8 +11,10 @@ function set_variables() {
     for (let i = 0; i < getOrders.length; i++) {
         // console.log(getOrders[i]);
         if (i != "0") {
-            var date = localStorage.getItem(getOrders[i]);
-            console.log(date);
+            row = localStorage.getItem(getOrders[i]);
+            row = row.split(',');
+            console.log(row);
+            
         }
     }
 
