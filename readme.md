@@ -20,5 +20,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/3/2025 | Work on retrieving data from local storage for display - in progress| 3 |
 | 1/4/2025 | Work on retrieving data from local storage for display - Retrieved rows from LS complete - In progress | .5 |
 | 1/7/2025 | Retrieved data from LS, set variables, display variables on index/test.js- Complete | 1.5 |
+| 1/7/2025 | CRUD-Read -  Complete | .5 |
+
 
 
