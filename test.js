@@ -11,9 +11,9 @@ function set_variables() {
     for (let i = 0; i < getOrders.length; i++) {
         // console.log(getOrders[i]);
         if (i != "0") {
-            row = localStorage.getItem(getOrders[i]);
-            row = row.split(',');
-            console.log(row);
+            orderRow = localStorage.getItem(getOrders[i]);
+            orderRow = orderRow.split(',');
+            console.log(orderRow);
             
         }
     }
