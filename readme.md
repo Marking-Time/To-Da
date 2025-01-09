@@ -22,7 +22,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/7/2025 | Retrieved data from LS, set variables, display variables on index/test.js- Complete | 1.5 |
 | 1/7/2025 | CRUD-Read -  Complete | .5 |
 | 1/8/2025 | Style display  | 1 |
-| 1/7/2025 | Style forn| .5 |
+| 1/7/2025 | Style form| .5 |
 
 
 
