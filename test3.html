@@ -11,6 +11,10 @@
             gap: 0px;
             height:1.5em;
         }
+
+        /* form label input{
+            display: block;
+        } */
         @media screen and (max-width : 480px) {
             .grid-container {
                 display: block;
@@ -27,12 +31,12 @@
     </style>
 </head>
 <body>
-<h1>The Window Object</h1>
-<h2>The localStorage Property</h2>
+<!-- <h1>The Window Object</h1> -->
+<h2>Simple Work Order </h2>
 
 
 <!-- form 2 -->
-<form onsubmit="save_order()">
+<form style="display: block;" onsubmit="save_order()">
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
     <label for="description">Description  <span style="color: red;"> *</span></label>
     <textarea name="description" id="description" rows="2" cols="40" required></textarea>
