@@ -13,11 +13,14 @@
         }
         @media screen and (max-width : 480px) {
             .grid-container {
-                display: flex;
+                display: block;
+                /* grid-template-columns: 2fr 1fr 3fr 1fr 1fr ; */
+                height: auto;
             }
             p {
-                display: wrap;
-                size: 10em;
+                display: inline;
+                /* grid-template-columns: 2fr 1fr 3fr 1fr 1fr ; */
+                height: auto;
             }
              /* div {
                 display: block;
