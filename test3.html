@@ -14,18 +14,14 @@
         @media screen and (max-width : 480px) {
             .grid-container {
                 display: block;
-                /* grid-template-columns: 2fr 1fr 3fr 1fr 1fr ; */
                 height: auto;
                 padding-top: 1em;
             }
             p {
                 display: block;
-                /* grid-template-columns: 2fr 1fr 3fr 1fr 1fr ; */
                 height: auto;
             }
-             /* div {
-                display: block;
-             } */
+
         }
         
     </style>
@@ -39,7 +35,7 @@
 <form onsubmit="save_order()">
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
     <label for="description">Description  <span style="color: red;"> *</span></label>
-    <textarea name="description" id="description" rows="5" cols="50" required></textarea>
+    <textarea name="description" id="description" rows="2" cols="40" required></textarea>
     <label for="tech">Technician</label><input id="tech" type="text" required value="Unassigned">
     <label for="status">Status</label>
      <select name="status" id="status">
