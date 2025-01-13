@@ -23,6 +23,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/7/2025 | CRUD-Read -  Complete | .5 |
 | 1/8/2025 | Style display  | 1 |
 | 1/7/2025 | Style form| .5 |
+| 1/13/2025 | Updated schema and integrated into test3 | 2.5 |
 
 
 
