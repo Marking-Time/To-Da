@@ -78,11 +78,12 @@ function set_variables() {
             orderRow = localStorage.getItem(getOrders[i]);
             orderRow = orderRow.split(',');
             console.log(orderRow);
-            rowDate = orderRow[0];
-            rowCustomer = orderRow[1];
-            rowDescription = orderRow[2];
-            rowAssigned = orderRow[3];
-            rowStatus = orderRow[4];
+            rowNumber = orderRow[0];
+            rowDate = orderRow[1];
+            rowCustomer = orderRow[2];
+            rowDescription = orderRow[3];
+            rowAssigned = orderRow[4];
+            rowStatus = orderRow[5];
 
             display_data();
             
@@ -95,6 +96,10 @@ function display_data() {
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
+
+    const displayNumber = document.createElement("p");
+    const number = document.createTextNode(rowNumber);
+    displayNumber.appendChild(number);
 
     const displayDate = document.createElement("p");
     const date = document.createTextNode(rowDate);
@@ -116,6 +121,7 @@ function display_data() {
     const status = document.createTextNode(rowStatus);
     displayStatus.appendChild(status);
 
+    displayRow.appendChild(displayNumber);
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
     displayRow.appendChild(displayDescription);
