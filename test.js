@@ -20,7 +20,7 @@ function date_now() {
     return d2
 }
 
-// The follwing add to ordersList and remove from ordersList
+// The follwing add to ordersList - CRUD-Create
 // They need to called from within the save_order() function
 function add_order() {
     let orderNumber = localStorage.getItem('increment');
@@ -46,7 +46,7 @@ function save_order() {
     const description = document.getElementById("description");
     const tech = document.getElementById("tech");
     const status = document.getElementById("status");
-    const order = [date, customer.value, description.value, tech.value, status.value];
+    const order = [orderNumber, date, customer.value, description.value, tech.value, status.value]; // prepend orderNumber
     localStorage.setItem(orderNumber, order);
     localStorage.setItem('increment',orderNumber);
 
