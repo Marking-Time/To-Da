@@ -92,14 +92,21 @@ function set_variables() {
 
 }
 
+function some_function() {
+    console.log("test");
+}
+
 function display_data() {
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
 
-    const displayNumber = document.createElement("p");
-    const number = document.createTextNode(rowNumber);
-    displayNumber.appendChild(number);
+// begin button
+    const uButton = document.createElement("button");
+    uButton.setAttribute("type","button");
+    uButton.addEventListener("click", some_function()); 
+    uButton.appendChild(document.createTextNode(rowNumber));
+//end button
 
     const displayDate = document.createElement("p");
     const date = document.createTextNode(rowDate);
@@ -121,7 +128,7 @@ function display_data() {
     const status = document.createTextNode(rowStatus);
     displayStatus.appendChild(status);
 
-    displayRow.appendChild(displayNumber);
+    displayRow.appendChild(uButton); // create  nutton
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
     displayRow.appendChild(displayDescription);
