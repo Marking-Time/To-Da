@@ -24,6 +24,9 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/8/2025 | Style display  | 1 |
 | 1/7/2025 | Style form| .5 |
 | 1/13/2025 | Updated schema, display and integrated into test3  | 3 |
+| 1/14/2025 | Create button for update delete and integrated into test3  | 2 |
+
+
 
 
 
