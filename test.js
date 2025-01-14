@@ -96,11 +96,21 @@ function display_data() {
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
-
-    const displayNumber = document.createElement("p");
-    const number = document.createTextNode(rowNumber);
-    displayNumber.appendChild(number);
-
+//begin button
+    // const displayNumber = document.createElement("p");
+    
+    const uButton = document.createElement("button");
+    uButton.setAttribute("type","button");
+    // uButton.setAttribute("style","height: 2em");
+    uButton.appendChild(document.createTextNode(rowNumber));
+    // uButton.innerText(rowNumber);
+    // const uNodeButton = document.createTextNode(rowNumber);
+    // uButton.appendChild(uNodeButton);
+    
+    // const number = document.createTextNode(rowNumber);
+    // displayNumber.appendChild(number);
+    // displayNumber.appendChild(uNodeButton);
+//end button
     const displayDate = document.createElement("p");
     const date = document.createTextNode(rowDate);
     displayDate.appendChild(date);
@@ -121,7 +131,7 @@ function display_data() {
     const status = document.createTextNode(rowStatus);
     displayStatus.appendChild(status);
 
-    displayRow.appendChild(displayNumber);
+    displayRow.appendChild(uButton); // create  nutton
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
     displayRow.appendChild(displayDescription);
