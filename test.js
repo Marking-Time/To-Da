@@ -92,25 +92,22 @@ function set_variables() {
 
 }
 
+function some_function() {
+    console.log("test");
+}
+
 function display_data() {
 
     const displayRow = document.createElement("div");
     displayRow.setAttribute("class", "grid-container");
-//begin button
-    // const displayNumber = document.createElement("p");
-    
+
+// begin button
     const uButton = document.createElement("button");
     uButton.setAttribute("type","button");
-    // uButton.setAttribute("style","height: 2em");
+    uButton.addEventListener("click", some_function()); 
     uButton.appendChild(document.createTextNode(rowNumber));
-    // uButton.innerText(rowNumber);
-    // const uNodeButton = document.createTextNode(rowNumber);
-    // uButton.appendChild(uNodeButton);
-    
-    // const number = document.createTextNode(rowNumber);
-    // displayNumber.appendChild(number);
-    // displayNumber.appendChild(uNodeButton);
 //end button
+
     const displayDate = document.createElement("p");
     const date = document.createTextNode(rowDate);
     displayDate.appendChild(date);
