@@ -100,7 +100,7 @@ function set_variables() {
 
 
 function some_function() {
-    console.log("test");
+    // console.log("test");
     document.getElementById("form1").style.display = "none";
     // hide_form1();
 }
@@ -116,6 +116,7 @@ function display_data() {
     uButton.setAttribute("type","button");
     uButton.setAttribute("id",rowNumber);
     // uButton.addEventListener("onclick", some_function()); // changed click to onclick
+    uButton.setAttribute("onclick","some_function()");
     uButton.appendChild(document.createTextNode(rowNumber));
 //end button
 
@@ -139,7 +140,7 @@ function display_data() {
     const status = document.createTextNode(rowStatus);
     displayStatus.appendChild(status);
 
-    displayRow.appendChild(uButton); // create  nutton
+    displayRow.appendChild(uButton); // create  button
     displayRow.appendChild(displayDate);
     displayRow.appendChild(displayCustomer);
     displayRow.appendChild(displayDescription);
