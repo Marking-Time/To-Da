@@ -92,9 +92,18 @@ function set_variables() {
 
 }
 
+// begin update code
+function hide_form1(){
+    const hide = document.getElementById("form1").style.display = "none";    
+}
+
+
+
 function some_function() {
     console.log("test");
+    // hide_form1();
 }
+//  end update code
 
 function display_data() {
 
@@ -104,6 +113,7 @@ function display_data() {
 // begin button
     const uButton = document.createElement("button");
     uButton.setAttribute("type","button");
+    uButton.setAttribute("id",rowNumber);
     uButton.addEventListener("click", some_function()); 
     uButton.appendChild(document.createTextNode(rowNumber));
 //end button
