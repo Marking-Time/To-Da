@@ -93,14 +93,15 @@ function set_variables() {
 }
 
 // begin update code
-function hide_form1(){
-    const hide = document.getElementById("form1").style.display = "none";    
-}
+// function hide_form1(){
+//     const hide = document.getElementById("form1").style.display = "none";    
+// }
 
 
 
 function some_function() {
     console.log("test");
+    document.getElementById("form1").style.display = "none";
     // hide_form1();
 }
 //  end update code
@@ -114,7 +115,7 @@ function display_data() {
     const uButton = document.createElement("button");
     uButton.setAttribute("type","button");
     uButton.setAttribute("id",rowNumber);
-    uButton.addEventListener("click", some_function()); 
+    // uButton.addEventListener("onclick", some_function()); // changed click to onclick
     uButton.appendChild(document.createTextNode(rowNumber));
 //end button
 
