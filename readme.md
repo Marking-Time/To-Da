@@ -26,6 +26,7 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/13/2025 | Updated schema, display and integrated into test3  | 3 |
 | 1/14/2025 | Create button for update delete and integrated into test3  | 2 |
 | 1/14/2025 | Move working code to index/scripts from test3.html and test.js  | .5 |
+| 1/18/2025 | Add id form1 and handler for button event listener  | 1 |
 
 
 
