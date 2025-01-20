@@ -99,11 +99,12 @@ function set_variables() {
 
 
 
-function some_function() {
+function update_functon(updateClicked) {
     // console.log("test");
     document.getElementById("form1").style.display = "none";
     document.getElementById("hide-display").style.display = "none";
     document.getElementById("display2").style.display = "block";
+    alert(updateClicked);
     // hide_form1();
 }
 //  end update code
@@ -118,7 +119,7 @@ function display_data() {
     uButton.setAttribute("type","button");
     uButton.setAttribute("id",rowNumber);
     // uButton.addEventListener("onclick", some_function()); // changed click to onclick
-    uButton.setAttribute("onclick","some_function()");
+    uButton.setAttribute("onclick","update_functon(this.id)");
     uButton.appendChild(document.createTextNode(rowNumber));
 //end button
 
