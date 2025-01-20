@@ -8,6 +8,11 @@
         form {
             display: inline-block;
         }
+        .form2 {
+            display: inline-block;
+        }
+
+
         label {
             display: inline-block;
             min-width: 90px;
@@ -82,6 +87,37 @@
 
 <div>
     <div id = "display"></div>
+</div>
+<div id="display2">
+    <div class="display2">test - Display 2</div> <!-- might need to change the class to display -->
+    <div class="form2">
+        <form id="form2" style="display: block;" onsubmit="save_order()">
+            <p>
+            <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
+            </p>
+            <p>
+            <label for="description">Description  <span style="color: red;"> *</span></label>
+            <textarea name="description" id="description" rows="2" cols="40" required></textarea>
+            </p>
+            <p>
+            <label for="tech">Technician</label><input id="tech" type="text" required value="Unassigned">
+            </p>
+            <p>
+            <label for="status">Status</label>
+             <select name="status" id="status">
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+                <option value="In Process">In Process</option>
+                <option value="Pending">Pending</option>
+             </select>
+            </p>
+            <p>
+            <input type="submit" value="Create Work Order">
+            </p>
+            <p>Required -<span style="color: red;"> *</span></p>
+        </form>
+    </div>
+   
 </div>
 
 <script src="test.js"></script>
