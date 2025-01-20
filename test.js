@@ -93,18 +93,17 @@ function set_variables() {
 }
 
 // begin update code
-// function hide_form1(){
-//     const hide = document.getElementById("form1").style.display = "none";    
-// }
 
-
-
-function update_functon(updateClicked) {
+//  sets dispaly and form1 to display:none
+//  reurns id for button clicked
+function update_functon_display(updateClicked) {
     // console.log("test");
     document.getElementById("form1").style.display = "none";
     document.getElementById("hide-display").style.display = "none";
     document.getElementById("display2").style.display = "block";
-    alert(updateClicked);
+    // alert(updateClicked);
+    return updateClicked;
+
     // hide_form1();
 }
 //  end update code
@@ -119,7 +118,7 @@ function display_data() {
     uButton.setAttribute("type","button");
     uButton.setAttribute("id",rowNumber);
     // uButton.addEventListener("onclick", some_function()); // changed click to onclick
-    uButton.setAttribute("onclick","update_functon(this.id)");
+    uButton.setAttribute("onclick","update_functon_display(this.id)");
     uButton.appendChild(document.createTextNode(rowNumber));
 //end button
 
