@@ -102,6 +102,7 @@ function set_variables() {
 function some_function() {
     // console.log("test");
     document.getElementById("form1").style.display = "none";
+    document.getElementById("hide-display").style.display = "none";
     document.getElementById("display2").style.display = "block";
     // hide_form1();
 }
