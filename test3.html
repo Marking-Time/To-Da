@@ -8,6 +8,9 @@
         form {
             display: inline-block;
         }
+        #display2{
+            display: none;
+        }
         .form2 {
             display: inline-block;
         }
@@ -58,7 +61,7 @@
 <h2>Simple Work Order </h2>
 
 
-<!-- form 2 -->
+<!-- form 1 -->
 <form id="form1" style="display: block;" onsubmit="save_order()">
     <p>
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
@@ -88,6 +91,8 @@
 <div>
     <div id = "display"></div>
 </div>
+
+<!-- Update - form2, display2 -->
 <div id="display2">
     <div class="display2">test - Display 2</div> <!-- might need to change the class to display -->
     <div class="form2">
