@@ -96,7 +96,7 @@
 <div id="display2">
     <div class="display2"><h3>Update/Delete</h3> - Display 2</div> <!-- might need to change the class to #display -->
     <div class="form2">
-        <form id="form2" style="display: block;" onsubmit="save_order()">
+        <form id="form2" style="display: block;" > <!--  removed onsubmit="save_order()" -->
             <p>
             <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
             </p>
@@ -117,7 +117,9 @@
              </select>
             </p>
             <p>
-            <input type="submit" value="Create Work Order">
+            <input type="button" onclick="update_order()" value="Update Order" > <!--  need to write order "update_order()" --> 
+            <input type="button" onclick="delete_order()" value="Delete Order" style="display: inline;"> <!--  need to write order "delete_order()" --> 
+            <input type="button" onclick="cancel_update()" value="Cancel" style="display: inline;"> <!--  need to write order "cancel_update()" --> 
             </p>
             <p>Required -<span style="color: red;"> *</span></p>
         </form>
