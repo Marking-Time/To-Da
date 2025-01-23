@@ -28,7 +28,9 @@ A simple Work Order system usisng local storage. It is not suitable for producti
 | 1/14/2025 | Move working code to index/scripts from test3.html and test.js  | .5 |
 | 1/18/2025 | Add id form1 and onclick attribute for button  | 2 |
 | 1/20/2025 | Change html and js to hide form1 and display - return id of button clicked - update_function_display() | 2 |
-| 1/21/2025 | Create update/delete/cancel buttons on form2 | .5 |
+| 1/21/2025 | Create update/delete/cancel buttons on form2 | .5 |  
+| 1/23/2025 | Display order to update in update view | 2 |  
+
 
 
 

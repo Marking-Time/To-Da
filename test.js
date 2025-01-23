@@ -117,7 +117,7 @@ function update_functon_display(updateClicked) {
     //     Order Number: ${updateOrderNumber}
     //     Date: ${updateDate}
     //     Customer: ${updateCustomer}
-    //     Description ${updateDescription}
+    //     Description: ${updateDescription}
     //     Assigned: ${updatAssigned}
     //     Status: ${updateStatus}`)
 
@@ -126,7 +126,7 @@ function update_functon_display(updateClicked) {
         Order Number: ${updateOrderNumber}
         Date: ${updateDate}
         Customer: ${updateCustomer}
-        Description ${updateDescription}
+        Description: ${updateDescription}
         Assigned: ${updatAssigned}
         Status: ${updateStatus}`);
     displyUpdateData.appendChild(displyUpdateText);
