@@ -6,7 +6,7 @@ function is_Initiated() {
     if (localStorage.key('initiated')) {
         increment = localStorage.getItem('increment');
         increment = Number(increment);
-        console.log(increment);
+        // console.log(increment);
         // return increment;
     }
 }
@@ -77,7 +77,7 @@ function set_variables() {
         if (i != "0") {
             orderRow = localStorage.getItem(getOrders[i]);
             orderRow = orderRow.split(',');
-            console.log(orderRow);
+            // console.log(orderRow);
             rowNumber = orderRow[0];
             rowDate = orderRow[1];
             rowCustomer = orderRow[2];
@@ -96,16 +96,24 @@ function set_variables() {
 
 //  sets dispaly and form1 to display:none
 //  reurns id for button clicked
+// hide_form1();
 function update_functon_display(updateClicked) {
-    // console.log("test");
     document.getElementById("form1").style.display = "none";
     document.getElementById("hide-display").style.display = "none";
     document.getElementById("display2").style.display = "block";
-    // alert(updateClicked);
-    return updateClicked;
-
-    // hide_form1();
+    // return updateClicked;
+    const updateArray = localStorage.getItem(updateClicked).split(',');
+    // console.log(updateArray);
+    const updateOrderNumber= updateArray[0];
+    const updateDate= updateArray[1];
+    const updateCustomer= updateArray[2];
+    const updateDescription= updateArray[3];
+    const updatAssigned= updateArray[4];
+    const updateStatus= updateArray[5];
+    console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updatAssigned,updateStatus);
 }
+
+
 //  end update code
 
 function display_data() {
