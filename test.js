@@ -112,24 +112,16 @@ function update_functon_display(updateClicked) {
     const updateStatus= updateArray[5];
     console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updatAssigned,updateStatus);
 
-    // display2update = document.getElementById(updateDisplay);
-    // display2update.document.write(`
-    //     Order Number: ${updateOrderNumber}
-    //     Date: ${updateDate}
-    //     Customer: ${updateCustomer}
-    //     Description: ${updateDescription}
-    //     Assigned: ${updatAssigned}
-    //     Status: ${updateStatus}`)
-
-    let displyUpdateData = document.createElement("p");
-    let displyUpdateText = document.createTextNode(`
-        Order Number: ${updateOrderNumber}
-        Date: ${updateDate}
-        Customer: ${updateCustomer}
-        Description: ${updateDescription}
-        Assigned: ${updatAssigned}
-        Status: ${updateStatus}`);
-    displyUpdateData.appendChild(displyUpdateText);
+//  Code to Display order to update
+    document.getElementById("updateDisplay").innerHTML = 
+    `<h3>Update Order</h3>
+    <p> Order Number: ${updateOrderNumber}</p>
+    <p>Date: ${updateDate}</p>
+    <p>Customer: ${updateCustomer}</p>
+    <p>Description: ${updateDescription}</p>
+    <p>Assigned: ${updatAssigned}</p>
+    <p>Status: ${updateStatus}</p>`;
+    // displyUpdateData.appendChild(displyUpdateText);
 
     const UpdateParentNode = document.getElementById("updateDisplay").parentNode;
     const updateCurrentDiv = document.getElementById("updateDisplay");
