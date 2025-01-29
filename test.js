@@ -121,11 +121,7 @@ function update_functon_display(updateClicked) {
     <p>Description: ${updateDescription}</p>
     <p>Assigned: ${updatAssigned}</p>
     <p>Status: ${updateStatus}</p>`;
-    // displyUpdateData.appendChild(displyUpdateText);
 
-    const UpdateParentNode = document.getElementById("updateDisplay").parentNode;
-    const updateCurrentDiv = document.getElementById("updateDisplay");
-    UpdateParentNode.insertBefore(displyUpdateData,updateCurrentDiv);
 }
 
 
