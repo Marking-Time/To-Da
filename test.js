@@ -104,12 +104,12 @@ function update_functon_display(updateClicked) {
     // return updateClicked;
     const updateArray = localStorage.getItem(updateClicked).split(',');
     // console.log(updateArray);
-    const updateOrderNumber= updateArray[0];
-    const updateDate= updateArray[1];
-    const updateCustomer= updateArray[2];
-    const updateDescription= updateArray[3];
-    const updatAssigned= updateArray[4];
-    const updateStatus= updateArray[5];
+    updateOrderNumber= updateArray[0];
+    updateDate= updateArray[1];
+    updateCustomer= updateArray[2]; //const
+    updateDescription= updateArray[3];
+    updatAssigned= updateArray[4];
+    updateStatus= updateArray[5];
     console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updatAssigned,updateStatus);
 
 //  Code to Display "order to update"
@@ -126,7 +126,7 @@ function update_functon_display(updateClicked) {
 // code to compare "order to update" and form2
 
 function update_order() {
-    console.log(alert("test"))
+    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 };
 
 //  --end update code--
