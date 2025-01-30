@@ -92,9 +92,9 @@ function set_variables() {
 
 }
 
-// begin update code
+// --begin update code--
 
-//  sets dispaly and form1 to display:none
+//  sets display and form1 to display:none
 //  reurns id for button clicked
 // hide_form1();
 function update_functon_display(updateClicked) {
@@ -112,7 +112,7 @@ function update_functon_display(updateClicked) {
     const updateStatus= updateArray[5];
     console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updatAssigned,updateStatus);
 
-//  Code to Display order to update
+//  Code to Display "order to update"
     document.getElementById("updateDisplay").innerHTML = 
     `<h3>Update Order</h3>
     <p> Order Number: ${updateOrderNumber}</p>
@@ -121,11 +121,15 @@ function update_functon_display(updateClicked) {
     <p>Description: ${updateDescription}</p>
     <p>Assigned: ${updatAssigned}</p>
     <p>Status: ${updateStatus}</p>`;
-
 }
 
+// code to compare "order to update" and form2
 
-//  end update code
+function update_order() {
+    console.log(alert("test"))
+};
+
+//  --end update code--
 
 function display_data() {
 
