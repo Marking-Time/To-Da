@@ -98,14 +98,14 @@
     <div class="form2">
         <form id="form2" style="display: block;" > <!--  removed onsubmit="save_order()" -->
             <p>
-            <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
+            <label for="customer">Customer </label><input id="customer" type="text" >
             </p>
             <p>
-            <label for="description">Description  <span style="color: red;"> *</span></label>
-            <textarea name="description" id="description" rows="2" cols="40" required></textarea>
+            <label for="description">Description </label>
+            <textarea name="description" id="description" rows="2" cols="40" ></textarea>
             </p>
             <p>
-            <label for="tech">Technician</label><input id="tech" type="text" required value="Unassigned">
+            <label for="tech">Technician</label><input id="tech" type="text" value="Unassigned">
             </p>
             <p>
             <label for="status">Status</label>
@@ -121,7 +121,6 @@
             <input type="button" onclick="delete_order()" value="Delete Order" style="display: inline;"> <!--  need to write order "delete_order()" --> 
             <input type="button" onClick="location.href='test3.html'" value="Cancel" style="display: inline;"> <!-- change to index.html - when done -->
             </p>
-            <p>Required -<span style="color: red;"> *</span></p>
         </form>
     </div>
    
