@@ -60,7 +60,8 @@ function save_order() {
 
  }
 
-//  
+//  ---- Display Data ----
+// CRUD - Read
 // gets data from local storage and returns an array of order numbers and displays on the index
 
 function get_LS_ordersList() {
@@ -92,8 +93,8 @@ function set_variables() {
 
 }
 
-// --begin update code--
 
+// ---- CRUD Update ----
 //  sets display and form1 to display:none
 //  reurns id for button clicked
 // hide_form1();
