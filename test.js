@@ -128,6 +128,9 @@ function update_functon_display(updateClicked) {
 
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
+
+    test = document.getElementById("updateStatus");
+    alert(test.value);
 };
 
 //  --end update code--
