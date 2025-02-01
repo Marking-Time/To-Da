@@ -129,8 +129,11 @@ function update_functon_display(updateClicked) {
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
+    compareCustomer = document.getElementById("compareCustomer");
+    compareDescription = document.getElementById("compareDescription");
+    compareTech = document.getElementById("compareTech");
     compareStatus = document.getElementById("compareStatus");
-    alert(compareStatus.value);
+alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
 };
 
 //  --end update code--
