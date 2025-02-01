@@ -129,7 +129,7 @@ function update_functon_display(updateClicked) {
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
-    test = document.getElementById("updateStatus");
+    test = document.getElementById("compareStatus");
     alert(test.value);
 };
 
