@@ -1,7 +1,7 @@
 //  CRUD functions:
 //  CRUD -Create
 
-// Check to see if data in localstorage
+// Check to see if data in local storage
 function is_Initiated() {
     if (localStorage.key('initiated')) {
         increment = localStorage.getItem('increment');
@@ -20,7 +20,7 @@ function date_now() {
     return d2
 }
 
-// The follwing add to ordersList - CRUD-Create
+// The following add to ordersList - CRUD-Create
 // They need to called from within the save_order() function
 function add_order() {
     let orderNumber = localStorage.getItem('increment');
@@ -96,7 +96,7 @@ function set_variables() {
 
 // ---- CRUD Update ----
 //  sets display and form1 to display:none
-//  reurns id for button clicked
+//  returns id for button clicked
 // hide_form1();
 function update_functon_display(updateClicked) {
     document.getElementById("form1").style.display = "none";
@@ -129,8 +129,8 @@ function update_functon_display(updateClicked) {
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
-    test = document.getElementById("compareStatus");
-    alert(test.value);
+    compareStatus = document.getElementById("compareStatus");
+    alert(compareStatus.value);
 };
 
 //  --end update code--
