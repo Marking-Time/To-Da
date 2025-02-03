@@ -134,6 +134,7 @@ function update_order() {
     compareTech = document.getElementById("compareTech");
     compareStatus = document.getElementById("compareStatus");
 alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
+// test
 };
 
 //  --end update code--
