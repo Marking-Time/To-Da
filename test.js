@@ -135,9 +135,10 @@ function update_order() {
     compareStatus = document.getElementById("compareStatus");
 alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
 // test
-if (compareCustomer.value = ""){
-	alert("customer not updated");
-	};
+//if (compareCustomer.value = ""){
+//	alert("customer not updated");
+//	};
+alert("customer not updated");
 };
 
 //  --end update code--
