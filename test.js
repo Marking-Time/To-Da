@@ -126,6 +126,23 @@ function update_functon_display(updateClicked) {
 
 // code to compare "order to update" and form2
 
+function compare(){
+	var form2Compare = false;
+	if (compareCustomer != ""){
+		form2Compare = true;
+	}
+	if (compareDescription != ""){
+		form2Compare = true;
+		}
+	if (compareTech != ""){
+		form2Compare = true;
+	}
+	if (compareStatus != updateStatus){
+		form2Compare = true;
+	}
+	console.log(form2Compare);
+}
+
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
@@ -136,12 +153,12 @@ function update_order() {
 alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
 
 // code to update LS
-let addToDescription = ""
+//let addToDescription = ""
 
-if (compareCustomer.value == ""){
-	alert("customer not updated");
-	};
-alert("customer not updated");
+//if (compareCustomer.value == ""){
+//	alert("customer not updated");
+//	};
+//alert("customer not updated");
 };
 
 //  --end update code--
