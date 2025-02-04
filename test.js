@@ -134,7 +134,10 @@ function update_order() {
     compareTech = document.getElementById("compareTech");
     compareStatus = document.getElementById("compareStatus");
 alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
-// test
+
+// code to update LS
+let addToDescription = ""
+
 if (compareCustomer.value == ""){
 	alert("customer not updated");
 	};
