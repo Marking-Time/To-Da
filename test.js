@@ -137,15 +137,16 @@ function compare(){
 	if (compareTech != ""){
 		form2Compare = true;
 	}
+	
 	if (compareStatus != updateStatus){
 		form2Compare = true;
 	}
 	console.log(form2Compare);
 }
 
-function dare2compare {
-	alert("comparison");
-}
+//function dare2compare {
+//	alert("comparison");
+//}
 
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
