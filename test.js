@@ -145,9 +145,6 @@ function compare(){
 	return form2Compare
 }
 
-function dare2compare {
-	alert("comparison");
-}
 
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
