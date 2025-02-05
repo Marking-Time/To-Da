@@ -128,25 +128,26 @@ function update_functon_display(updateClicked) {
 
 function compare(){
 	var form2Compare = false;
-	if (compareCustomer != ""){
+	if (compareCustomer.value != ""){
 		form2Compare = true;
 	}
-	if (compareDescription != ""){
+	if (compareDescription.value != ""){
 		form2Compare = true;
 		}
-	if (compareTech != ""){
+	if (compareTech.value != ""){
 		form2Compare = true;
 	}
 	
-	if (compareStatus != updateStatus){
+	if (compareStatus.value != updateStatus){
 		form2Compare = true;
 	}
 	console.log(form2Compare);
+	return form2Compare
 }
 
-//function dare2compare {
-//	alert("comparison");
-//}
+function dare2compare {
+	alert("comparison");
+}
 
 function update_order() {
     console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
