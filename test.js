@@ -174,7 +174,6 @@ alert(` Customer = ${compareCustomer}, Description = ${compareDescription}, Tech
 
 //code to check for changes in form2 DATA and update LS
 
-da
 };
 
 //  --end update code--
