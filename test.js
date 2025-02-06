@@ -123,11 +123,14 @@ function update_functon_display(updateClicked) {
     <p>Assigned: ${updatAssigned}</p>
     <p>Status: ${updateStatus}</p>`;
 	
-// code to clear form2
-document.getElementById("compareCustomer").value = "";
+// code to populate form2 tech
+//document.getElementById("compareTech").value = updatAssigned // ---- working
+	
+// code to clear form2 - set initial value
+document.getElementById("compareCustomer").value = updateCustomer;
 document.getElementById("compareDescription").value = "";
-document.getElementById("compareTech").value = "";
-document.getElementById("compareStatus").value = updateStatus; // 
+document.getElementById("compareTech").value = updatAssigned; // changed
+document.getElementById("compareStatus").value = updateStatus; 
 
 // code to update LS
 
@@ -137,14 +140,16 @@ document.getElementById("compareStatus").value = updateStatus; //
 // code to compare "order to update" and form2
 
 function compare(){
+	
+	
 	var form2Compare = false;
-	if (compareCustomer.value != ""){
+	if (compareCustomer.value != updateCustomer){
 		form2Compare = true;
 	}
 	if (compareDescription.value != ""){
-		form2Compare = true;
+		form2Compare = false;
 		}
-	if (compareTech.value != ""){
+	if (compareTech.value != updatAssigned){
 		form2Compare = true;
 	}
 	
@@ -165,6 +170,9 @@ function compare(){
 
 function update_order() {
 //    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
+
+	form2Updated = compare();
+	console.log(form2Updated);
 
     compareCustomer = document.getElementById("compareCustomer").value;
     compareDescription = document.getElementById("compareDescription").value;
