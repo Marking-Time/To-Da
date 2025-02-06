@@ -16,7 +16,7 @@ function date_now() {
     let d1 = new Date();
     d1.toUTCString();
     let d2 = d1.toString();
-    d2 = d2.slice(0,24);
+    d2 = d2.slice(0,21);
     return d2
 }
 
@@ -124,11 +124,14 @@ function update_functon_display(updateClicked) {
     <p>Status: ${updateStatus}</p>`;
 	
 // code to clear form2
-
 document.getElementById("compareCustomer").value = "";
 document.getElementById("compareDescription").value = "";
 document.getElementById("compareTech").value = "";
-document.getElementById("compareStatus").value = updateStatus;
+document.getElementById("compareStatus").value = updateStatus; // 
+
+// code to update LS
+
+
 }
 
 // code to compare "order to update" and form2
@@ -148,7 +151,14 @@ function compare(){
 	if (compareStatus.value != updateStatus){
 		form2Compare = true;
 	}
+	
+	if (form2Compare = true) {
+		LSdescription = `<br> ${date_now()}`  // in Process 
+	}
+	
+	
 	console.log(form2Compare);
+	console.log(LSdescription);
 	return form2Compare
 }
 
@@ -162,7 +172,9 @@ function update_order() {
     compareStatus = document.getElementById("compareStatus").value;
 alert(` Customer = ${compareCustomer}, Description = ${compareDescription}, Technician Assigned = ${compareTech}, Work Order Status = ${compareStatus} `);
 
+//code to check for changes in form2 DATA and update LS
 
+da
 };
 
 //  --end update code--
