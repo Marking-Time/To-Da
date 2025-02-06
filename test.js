@@ -122,6 +122,13 @@ function update_functon_display(updateClicked) {
     <p>Description: ${updateDescription}</p>
     <p>Assigned: ${updatAssigned}</p>
     <p>Status: ${updateStatus}</p>`;
+	
+// code to clear form2
+
+document.getElementById("compareCustomer").value = "";
+document.getElementById("compareDescription").value = "";
+document.getElementById("compareTech").value = "";
+document.getElementById("compareStatus").value = updateStatus;
 }
 
 // code to compare "order to update" and form2
@@ -147,21 +154,15 @@ function compare(){
 
 
 function update_order() {
-    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
+//    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
-    compareCustomer = document.getElementById("compareCustomer");
-    compareDescription = document.getElementById("compareDescription");
-    compareTech = document.getElementById("compareTech");
-    compareStatus = document.getElementById("compareStatus");
-alert(` Customer = ${compareCustomer.value}, Description = ${compareDescription.value}, Technician Assigned = ${compareTech.value}, Work Order Status = ${compareStatus.value} `);
+    compareCustomer = document.getElementById("compareCustomer").value;
+    compareDescription = document.getElementById("compareDescription").value;
+    compareTech = document.getElementById("compareTech").value;
+    compareStatus = document.getElementById("compareStatus").value;
+alert(` Customer = ${compareCustomer}, Description = ${compareDescription}, Technician Assigned = ${compareTech}, Work Order Status = ${compareStatus} `);
 
-// code to update LS
-//let addToDescription = ""
 
-//if (compareCustomer.value == ""){
-//	alert("customer not updated");
-//	};
-//alert("customer not updated");
 };
 
 //  --end update code--
