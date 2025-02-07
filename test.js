@@ -147,7 +147,7 @@ function compare(){
 		form2Compare = true;
 	}
 	if (compareDescription.value != ""){
-		form2Compare = false;
+		form2Compare = true;
 		}
 	if (compareTech.value != updatAssigned){
 		form2Compare = true;
