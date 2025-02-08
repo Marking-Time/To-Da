@@ -33,7 +33,8 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 1/27/2025 | Format order to update in update view | 1 |  
 | 2/1/2025 | Change all variables in form 2 for comparison to stored data | 1 |   
 | 2/6/2025 | update compare - build string to append to LSdescription | 2 |   
-| 2//2025 | continue to work on update/compare | 1.5 |   
+| 2/7/2025 | continue to work on update/compare | 1.5 |   
+| 2/8/2025 | continue to work on update/compare - type 2 error | .25 |   
 
 
 
