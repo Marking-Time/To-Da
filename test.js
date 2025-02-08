@@ -167,7 +167,7 @@ function compare(){
 	return form2Compare
 }
 
-
+// code  below -- not working --
 function update_order() {
 //    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
 
