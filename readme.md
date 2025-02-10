@@ -35,6 +35,7 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/6/2025 | update compare - build string to append to LSdescription | 2 |   
 | 2/7/2025 | continue to work on update/compare | 1.5 |   
 | 2/8/2025 | continue to work on update/compare - type 2 error | .75 |   
+| 2/10/2025 | need to rewrite update_order() and compare() | 1 |   
 
 
 
