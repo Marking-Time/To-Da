@@ -103,7 +103,7 @@ function update_functon_display(updateClicked) {
     document.getElementById("hide-display").style.display = "none";
     document.getElementById("display2").style.display = "block";
     // return updateClicked;
-    const updateArray = localStorage.getItem(updateClicked).split(',');
+    updateArray = localStorage.getItem(updateClicked).split(',');
     // console.log(updateArray);
     updateOrderNumber= updateArray[0];
     updateDate= updateArray[1];
@@ -143,23 +143,23 @@ function compare(){
 	
 	
 	var form2Compare = false;
-	if (compareCustomer.value != updateCustomer){
+	if (compareCustomer != updateCustomer){
 		form2Compare = true;
 	}
-	if (compareDescription.value != ""){
-		form2Compare = true;
-		}
-	if (compareTech.value != updatAssigned){
-		form2Compare = true;
-	}
-	
-	if (compareStatus.value != updateStatus){
-		form2Compare = true;
-	}
+//	if (compareDescription.value != "" && compareDescription != updateDescription){
+//		form2Compare = true;
+//		}
+//	if (compareTech.value != updatAssigned){
+//		form2Compare = true;
+//	}
+//	
+//	if (compareStatus.value != updateStatus){
+//		form2Compare = true;
+//	}
 	
 	if (form2Compare = true) {
 		LSdescription = `<br> ${date_now()}`  // in Process 
-	}
+	};
 	
 	
 	console.log(form2Compare);
