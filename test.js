@@ -2,14 +2,14 @@
 //  CRUD -Create
 
 // Check to see if data in local storage
-function is_Initiated() {
-    if (localStorage.key('initiated')) {
-        increment = localStorage.getItem('increment');
-        increment = Number(increment);
-        // console.log(increment);
-        // return increment;
-    }
-}
+//function is_Initiated() {
+//    if (localStorage.key('initiated')) {
+//        increment = localStorage.getItem('increment');
+//        increment = Number(increment);
+//        // console.log(increment);
+//        // return increment;
+//    }
+//}
 
 //  Returns a string of the current date and time in local time zone
 function date_now() {
@@ -22,18 +22,6 @@ function date_now() {
 
 // The following add to ordersList - CRUD-Create
 // They need to called from within the save_order() function
-function add_order() {
-    let orderNumber = localStorage.getItem('increment');
-    orderNumber = Number(orderNumber);
-    orderNumber +=1;
-
-    let orders =  localStorage.getItem('ordersList');
-    orders = orders.split(',');
-    orders = orders.push(orderNumber);
-
-
-    return orders;
-}
 
 function save_order() {
 
@@ -70,6 +58,7 @@ function get_LS_ordersList() {
     return getOrders;
 }
 
+//  -- gets- data from Local Storage(LS) 
 function set_variables() {
     getOrders = get_LS_ordersList();
 
@@ -93,10 +82,56 @@ function set_variables() {
 
 }
 
+function display_data() {
+
+    const displayRow = document.createElement("div");
+    displayRow.setAttribute("class", "grid-container");
+
+// begin button
+    const uButton = document.createElement("button");
+    uButton.setAttribute("type","button");
+    uButton.setAttribute("id",rowNumber);
+    // uButton.addEventListener("onclick", some_function()); // changed click to onclick
+    uButton.setAttribute("onclick","update_functon_display(this.id)");
+    uButton.appendChild(document.createTextNode(rowNumber));
+//end button
+
+    const displayDate = document.createElement("p");
+    const date = document.createTextNode(rowDate);
+    displayDate.appendChild(date);
+
+    const displayCustomer = document.createElement("p");
+    const customer = document.createTextNode(rowCustomer);
+    displayCustomer.appendChild(customer);
+
+    const displayDescription = document.createElement("p");
+    const description = document.createTextNode(rowDescription);
+    displayDescription.appendChild(description);
+
+    const displayTechnician = document.createElement("p");
+    const technician = document.createTextNode(rowAssigned);
+    displayTechnician.appendChild(technician);
+
+    const displayStatus = document.createElement("p");
+    const status = document.createTextNode(rowStatus);
+    displayStatus.appendChild(status);
+
+    displayRow.appendChild(uButton); // create  button
+    displayRow.appendChild(displayDate);
+    displayRow.appendChild(displayCustomer);
+    displayRow.appendChild(displayDescription);
+    displayRow.appendChild(displayTechnician);
+    displayRow.appendChild(displayStatus);
+
+    const parentDiv = document.getElementById("display").parentNode;
+
+    const currentDiv = document.getElementById("display");
+    parentDiv.insertBefore(displayRow,currentDiv);
+}
 
 // ---- CRUD Update ----
 //  sets display and form1 to display:none
-//  returns id for button clicked
+//  returns id for button clicked on form1 list
 // hide_form1();
 function update_functon_display(updateClicked) {
     document.getElementById("form1").style.display = "none";
@@ -186,52 +221,7 @@ alert(` Customer = ${compareCustomer}, Description = ${compareDescription}, Tech
 
 //  --end update code--
 
-function display_data() {
 
-    const displayRow = document.createElement("div");
-    displayRow.setAttribute("class", "grid-container");
-
-// begin button
-    const uButton = document.createElement("button");
-    uButton.setAttribute("type","button");
-    uButton.setAttribute("id",rowNumber);
-    // uButton.addEventListener("onclick", some_function()); // changed click to onclick
-    uButton.setAttribute("onclick","update_functon_display(this.id)");
-    uButton.appendChild(document.createTextNode(rowNumber));
-//end button
-
-    const displayDate = document.createElement("p");
-    const date = document.createTextNode(rowDate);
-    displayDate.appendChild(date);
-
-    const displayCustomer = document.createElement("p");
-    const customer = document.createTextNode(rowCustomer);
-    displayCustomer.appendChild(customer);
-
-    const displayDescription = document.createElement("p");
-    const description = document.createTextNode(rowDescription);
-    displayDescription.appendChild(description);
-
-    const displayTechnician = document.createElement("p");
-    const technician = document.createTextNode(rowAssigned);
-    displayTechnician.appendChild(technician);
-
-    const displayStatus = document.createElement("p");
-    const status = document.createTextNode(rowStatus);
-    displayStatus.appendChild(status);
-
-    displayRow.appendChild(uButton); // create  button
-    displayRow.appendChild(displayDate);
-    displayRow.appendChild(displayCustomer);
-    displayRow.appendChild(displayDescription);
-    displayRow.appendChild(displayTechnician);
-    displayRow.appendChild(displayStatus);
-
-    const parentDiv = document.getElementById("display").parentNode;
-
-    const currentDiv = document.getElementById("display");
-    parentDiv.insertBefore(displayRow,currentDiv);
-}
 
 //  Run
 set_variables();
