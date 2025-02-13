@@ -6,8 +6,20 @@ return true
 
 result = false
 function compare() {
-	if (updateDescription != document.getElementById("compareDescription").value
-	&& document.getElementById("compareDescription").value != "")  {
+	if (document.getElementById("compareDescription").value != "")  {
 	result = true;
 	}
 return result
+}
+
+function is_changed(){}
+function append() {}
+
+function build() {
+	is_changed();
+	append();
+	
+	
+	alert("test");
+}
+
