@@ -144,9 +144,9 @@ function update_functon_display(updateClicked) {
     updateDate= updateArray[1];
     updateCustomer= updateArray[2]; //const
     updateDescription= updateArray[3];
-    updatAssigned= updateArray[4];
+    updateAssigned= updateArray[4];
     updateStatus= updateArray[5];
-    console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updatAssigned,updateStatus);
+    console.log(updateOrderNumber,updateDate,updateCustomer,updateDescription,updateAssigned,updateStatus);
 
 //  Code to Display "order to update"
     document.getElementById("updateDisplay").innerHTML = 
@@ -155,7 +155,7 @@ function update_functon_display(updateClicked) {
     <p>Date: ${updateDate}</p>
     <p>Customer: ${updateCustomer}</p>
     <p>Description: ${updateDescription}</p>
-    <p>Assigned: ${updatAssigned}</p>
+    <p>Assigned: ${updateAssigned}</p>
     <p>Status: ${updateStatus}</p>`;
 	
 // code to populate form2 tech
@@ -164,7 +164,7 @@ function update_functon_display(updateClicked) {
 // code to clear form2 - set initial value
 document.getElementById("compareCustomer").value = updateCustomer;
 document.getElementById("compareDescription").value = "";
-document.getElementById("compareTech").value = updatAssigned; // changed
+document.getElementById("compareTech").value = updateAssigned; 
 document.getElementById("compareStatus").value = updateStatus; 
 
 // code to update LS

@@ -11,8 +11,32 @@ function compare() {
 	}
 return result
 }
+// --- code for update ---
+formUpdated = false
+function is_changed(){
+	if (updateCustomer != document.getElementById("compareCustomer").value) {
+		formUpdated = true;
+	}
+	
+	if (updateAssigned != document.getElementById("compareTech").value) {
+		formUpdated = true;
+	}
+	
+	if (updateStatus != document.getElementById("compareStatus").value) {
+		formUpdated = true;
+	}
+	
+	if (updateDescription != document.getElementById("compareDescription").value
+		&& 
+		document.getElementById("compareDescription").value != "") {
+		formUpdated = true;
+	}
+	
+	
+return formUpdated	
+}
 
-function is_changed(){}
+
 function append() {}
 
 function build() {
