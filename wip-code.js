@@ -32,7 +32,8 @@ function is_changed(){
 		formUpdated = true;
 	}
 	
-	
+	dateToAppend = date_now();
+	updateDescription = updateDescription.concat('<br>',dateToAppend);
 return formUpdated	
 }
 
