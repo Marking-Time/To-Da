@@ -36,8 +36,8 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/7/2025 | continue to work on update/compare | 1.5 |   
 | 2/8/2025 | continue to work on update/compare - type 2 error | .75 |   
 | 2/10/2025 | need to rewrite update_order() and compare() | 1 |   
-| 2/12/2025 | Prepare for refactor | 1 | 
-
+| 2/12/2025 | Prepare for refactor | 1 |  
+| 2/14/2025 | create is_changed to compare update'var' and form2 - appending date if changed  | 1.25 |  
 
 
 
