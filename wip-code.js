@@ -40,13 +40,35 @@ return formUpdated
 }
 
 
-function append() {}
+function append() {
+	if (updateCustomer != document.getElementById("compareCustomer").value) {
+		updateCustomer = document.getElementById("compareCustomer").value;
+		updateDescription = updateDescription.concat(updateCustomer);
+	}
+	
+	if (updateAssigned != document.getElementById("compareTech").value) {
+		updateAssigned = document.getElementById("compareTech").value;
+		updateDescription = updateDescription.concat(updateAssigned);
+	}
+	
+	if (updateStatus != document.getElementById("compareStatus").value) {
+		updateStatus = document.getElementById("compareStatus").value;
+		updateDescription = updateDescription.concat(updateStatus);
+	}
+	
+	if (updateDescription != document.getElementById("compareDescription").value
+		&& 
+		document.getElementById("compareDescription").value != "") {
+		updateDescription = updateDescription.concat(document.getElementById("compareDescription"));
+	}
+	
+}
 
 function build() {
 	is_changed();
-	append();
+	if (formUpdated == true){
+		append();
+	}
 	
-	
-	alert("test");
 }
 
