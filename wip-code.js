@@ -1,16 +1,4 @@
-function compare(){ 
-if (compareDescription == document.getElementById("compareDescription").value)
-{
-return true
-}}
 
-result = false
-function compare() {
-	if (document.getElementById("compareDescription").value != "")  {
-	result = true;
-	}
-return result
-}
 // --- code for update ---
 formUpdated = false
 function is_changed(){
