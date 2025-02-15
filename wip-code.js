@@ -59,7 +59,8 @@ function append() {
 	if (updateDescription != document.getElementById("compareDescription").value
 		&& 
 		document.getElementById("compareDescription").value != "") {
-		updateDescription = updateDescription.concat(document.getElementById("compareDescription"));
+		textData = document.getElementById("compareDescription");	
+		updateDescription = updateDescription.concat(textData.value);
 	}
 	
 }
