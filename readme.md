@@ -39,7 +39,7 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/12/2025 | Prepare for refactor | 1 |  
 | 2/14/2025 | create is_changed to compare update'var' and form2 - appending date if changed  | 1.25 |  
 | 2/15/2025 | complete append and build functions  | 2 |   
-| 2/16/2025 | add code for description formatting and integrate into test.js  | 1 |   
+| 2/16/2025 | add code for description formatting and integrate into test.js - CRUD-Update complete | 1.5 |   
 
 
 
