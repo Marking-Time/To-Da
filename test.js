@@ -284,6 +284,9 @@ function build() {
 	}	
 }
 build();
+
+updateOrder = [updateOrderNumber, updateDate, updateCustomer, updateDescription, updateAssigned, updateStatus];
+localStorage.setItem(updateOrderNumber, updateOrder);
 	
 }
 
