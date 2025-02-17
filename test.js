@@ -105,8 +105,9 @@ function display_data() {
     displayCustomer.appendChild(customer);
 
     const displayDescription = document.createElement("p");
-    const description = document.createTextNode(rowDescription);
-    displayDescription.appendChild(description);
+    //const description = document.createTextNode(rowDescription);
+    //displayDescription.appendChild(description);
+	displayDescription.innerHTML = rowDescription;
 
     const displayTechnician = document.createElement("p");
     const technician = document.createTextNode(rowAssigned);
