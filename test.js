@@ -289,9 +289,22 @@ build();
 updateOrder = [updateOrderNumber, updateDate, updateCustomer, updateDescription, updateAssigned, updateStatus];
 localStorage.setItem(updateOrderNumber, updateOrder);
 
- location.replace("test3.html");
+location.replace("test3.html");
 
 }
+// end update code
+
+//delete code
+function delete_order(){
+	deleteList = localStorage.getItem("ordersList");
+	deleteList = deleteList.replace(`,${updateOrderNumber}`,"");
+	
+	localStorage.setItem("ordersList",deleteList);
+	localStorage.removeItem(updateOrderNumber);
+	
+	location.replace("test3.html");
+}
+
 
 //  Run
 set_variables();
