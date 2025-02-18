@@ -173,58 +173,12 @@ document.getElementById("compareStatus").value = updateStatus;
 
 }
 
-// code to compare "order to update" and form2
 
-//function compare(){
-	
-	
-//	var form2Compare = false;
-//	if (compareCustomer != updateCustomer){
-//		form2Compare = true;
-//	}
-//	if (compareDescription.value != "" && compareDescription != updateDescription){
-//		form2Compare = true;
-//		}
-//	if (compareTech.value != updatAssigned){
-//		form2Compare = true;
-//	}
-//	
-//	if (compareStatus.value != updateStatus){
-//		form2Compare = true;
-//	}
-	
-//	if (form2Compare = true) {
-//		LSdescription = `<br> ${date_now()}`  // in Process 
-//	};
-	
-	
-//	console.log(form2Compare);
-//	console.log(LSdescription);
-//	return form2Compare
-//}
-
-// code  below -- not working --
-//function update_order() {
-//    console.log(alert(`${updateCustomer}, ${updateDescription}, ${updatAssigned}, ${updateStatus}`));
-
-//	form2Updated = compare();
-//	console.log(form2Updated);
-
-//    compareCustomer = document.getElementById("compareCustomer").value;
-//    compareDescription = document.getElementById("compareDescription").value;
-//    compareTech = document.getElementById("compareTech").value;
-//    compareStatus = document.getElementById("compareStatus").value;
-//alert(` Customer = ${compareCustomer}, Description = ${compareDescription}, Technician Assigned = ${compareTech}, Work Order Status = ${compareStatus} `);
-
-//code to check for changes in form2 DATA and update LS
-
-//};
-
-//  --end update code--
+// --- code for update_order ---
 
 function update_order(){
 	
-// --- code for update_order ---
+
 formUpdated = false
 function is_changed(){
 	if (updateCustomer != document.getElementById("compareCustomer").value) {
