@@ -41,7 +41,7 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/15/2025 | complete append and build functions  | 2 |   
 | 2/16/2025 | add code for description formatting and integrate into test.js - CRUD-Update complete | 1.5 |   
 | 2/18/2025 | CRUD-Delete complete -- __CRUD COMPLETE__ -- | 1 |   
-
+| 2/19/2025 | Add column headings to display | 1 |   
 
 
 
