@@ -258,7 +258,15 @@ function delete_order(){
 	
 	location.replace("test3.html");
 }
-
+function initiate(){
+	LS = localStorage;
+	if (Object.hasOwn(LS,"increment") != true){
+		localStorage.setItem("increment",0);
+		localStorage.setItem("ordersList","");
+	}
+	
+	return false
+}
 
 //  Run
 set_variables();
