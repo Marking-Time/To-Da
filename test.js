@@ -269,4 +269,5 @@ function initiate(){
 }
 
 //  Run
+initiate();
 set_variables();
