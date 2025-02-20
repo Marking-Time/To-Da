@@ -42,6 +42,9 @@
             display: block;
         } */
         @media screen and (max-width : 480px) {
+			#column-headers {
+				display: none;
+			}
             .grid-container {
                 display: block;
                 height: auto;
@@ -89,7 +92,7 @@
 </form>
 
 <!-- testing -->
-<div class="grid-container"> 
+<div id="column-headers" class="grid-container"> 
 <p><b>Order#</b></p>
 <p><b>Date</b></p>
 <p><b>Customer</b></p>

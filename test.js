@@ -84,7 +84,7 @@ function set_variables() {
 
 function display_data() {
 
-    const displayRow = document.createElement("div");
+    const displayRow = document.createElement("order");
     displayRow.setAttribute("class", "grid-container");
 
 // begin button
@@ -137,6 +137,9 @@ function display_data() {
 function update_functon_display(updateClicked) {
     document.getElementById("form1").style.display = "none";
     document.getElementById("hide-display").style.display = "none";
+	
+	document.getElementById("column-headers").style.display = "none";
+	
     document.getElementById("display2").style.display = "block";
     // return updateClicked;
     updateArray = localStorage.getItem(updateClicked).split(',');
