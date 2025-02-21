@@ -243,7 +243,7 @@ build();
 updateOrder = [updateOrderNumber, updateDate, updateCustomer, updateDescription, updateAssigned, updateStatus];
 localStorage.setItem(updateOrderNumber, updateOrder);
 
-location.replace("test3.html");
+location.replace("index.html");
 
 }
 // end update code
@@ -256,7 +256,7 @@ function delete_order(){
 	localStorage.setItem("ordersList",deleteList);
 	localStorage.removeItem(updateOrderNumber);
 	
-	location.replace("test3.html");
+	location.replace("index.html");
 }
 function initiate(){
 	LS = localStorage;

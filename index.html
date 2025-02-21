@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Test 3</title>
     <style>
+		a, h4, #column-headers {
+		margin:0px;
+		}
         form {
             display: inline-block;
         }
+        #display2, #form1-instructions{
+            display: none;
+        }
+        .form2 {
+            display: inline-block;
+        }
+
+
         label {
             display: inline-block;
             min-width: 90px;
@@ -20,12 +31,12 @@
         .grid-container {
             display: grid;
             grid-template-columns: .25fr 1fr 1fr 3fr 1fr 1fr;
-            gap: 0px;
-            height:1.5em;
+            /*gap: 0px;*/
+            /*height:1.5em;*/
         }
         .grid-container, button{
-            height: 1.5em;
-            line-height: 0px;
+            /*height: 1.5em;*/
+            /*line-height: 0px;*/
             align-items: baseline;
             margin-right: .5em;
         }
@@ -34,6 +45,9 @@
             display: block;
         } */
         @media screen and (max-width : 480px) {
+			#column-headers {
+				display: none;
+			}
             .grid-container {
                 display: block;
                 height: auto;
@@ -51,10 +65,24 @@
 <body>
 <!-- <h1>The Window Object</h1> -->
 <h2>Simple Work Order </h2>
+<a href="#" onclick ="access()"><h4>Accessibility Instructions</h4></a>
+<div id="form1-instructions">
+<a href="#" onclick ="no_access()">Close Instructions</a>
+<p>
+Instructions for using "Simple Work Order". <br>
+This application is used to create and track work orders.
+<h4>Create an Order</h4>
+ Place an order using the form below. Submit the form with the "Create Work Order" button.  <br>
+Open orders are displayed below the form. Orders are displayed until they are deleted. Each open order is inside an "order" label (not visible to non-screen reader users). Each order contains an "order number button" followed by the order date, customer, description(with updates), the technician it is assigned to, and the status of the order. To update or delete an order click on the "order number button".
+<h4>Update an Order</h4> 
+After the user clicks on the "order number button" corresponding the the order they wish to update, the order to be updated is listed below. Following the order, is a form that is populated with the data from from the order with the exception of the description field which is blank. Any of the fields can be updated except for the "Order Number" field which is used as a measure of all the work orders that the system has processed. All changes made in the form below are appended to the description, so the user can track the progress of the work done on the order.<br>
+There are three buttons at the bottom of the form.  The first is "Update order" which appends the changes made in the form to the description for progress tracking.  The second is the "Delete" button which removes the the order from the system.  The third is the "Cancel" button which stops the the update operation and displays the first page.
+</p>
+</div>
 
-
-<!-- form 2 -->
-<form style="display: block;" onsubmit="save_order()">
+<!-- form 1 -->
+<form id="form1" style="display: block;" onsubmit="save_order()">
+<h3>Create an Order</h3>
     <p>
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
     </p>
@@ -80,11 +108,58 @@
     <p>Required -<span style="color: red;"> *</span></p>
 </form>
 
-<div>
+<!-- Open Order Column Headers -->
+<h4 id="open-orders">Open Orders:</h4>
+<div id="column-headers" class="grid-container"> 
+<p><b>Order#</b></p>
+<p><b>Date</b></p>
+<p><b>Customer</b></p>
+<p><b>Description</b></p>
+<p><b>Technician</b></p>
+<p><b>Status</b></p>
+</div>
+<!-- end Headers -->
+
+<div id="hide-display">
+
     <div id = "display"></div>
 </div>
 
-<script src="scripts.js"></script>
+<!-- Update - form2, display2 -->
+<div id="display2">
+    <div id="updateDisplay" class="display2"><h3>Update/Delete</h3> - Display 2</div> <!-- might need to change the class to #display -->
+    <div class="form2">
+        <form id="form2" style="display: block;" > <!--  removed onsubmit="save_order()" -->
+            <p>
+            <label for="compareCustomer">Customer </label><input id="compareCustomer" type="text" >
+            </p>
+            <p>
+            <label for="compareDescription">Description </label>
+            <textarea name="compareDescription" id="compareDescription" rows="2" cols="40" ></textarea>
+            </p>
+            <p>
+            <label for="compareTech">Technician</label><input id="compareTech" type="text" > <!-- removed - value="Unassigned" -->
+            </p>
+            <p>
+            <label for="compareStatus">Status</label>
+             <select name="compareStatus" id="compareStatus">
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+                <option value="In Process">In Process</option>
+                <option value="Pending">Pending</option>
+             </select>
+            </p>
+            <p>
+            <input type="button" onclick="update_order()" value="Update Order" > <!--  need to write order "update_order()" --> 
+            <input type="button" onclick="delete_order()" value="Delete Order" style="display: inline;"> <!--  need to write order "delete_order()" --> 
+            <input type="button" onClick="location.href='index.html'" value="Cancel" style="display: inline;"> <!-- change to index.html - when done -->
+            </p>
+        </form>
+    </div>
+   
+</div>
+
+<script src="test.js"></script>
     
 </body>
 </html>

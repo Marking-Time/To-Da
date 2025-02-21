@@ -3,19 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test 3</title>
+    <title>Index</title>
     <style>
         form {
             display: inline-block;
         }
-        #display2{
-            display: none;
-        }
-        .form2 {
-            display: inline-block;
-        }
-
-
         label {
             display: inline-block;
             min-width: 90px;
@@ -61,8 +53,8 @@
 <h2>Simple Work Order </h2>
 
 
-<!-- form 1 -->
-<form id="form1" style="display: block;" onsubmit="save_order()">
+<!-- form 2 -->
+<form style="display: block;" onsubmit="save_order()">
     <p>
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
     </p>
@@ -88,45 +80,11 @@
     <p>Required -<span style="color: red;"> *</span></p>
 </form>
 
-<div id="hide-display">
+<div>
     <div id = "display"></div>
 </div>
 
-<!-- Update - form2, display2 -->
-<div id="display2">
-    <div id="updateDisplay" class="display2"><h3>Update/Delete</h3> - Display 2</div> <!-- might need to change the class to #display -->
-    <div class="form2">
-        <form id="form2" style="display: block;" > <!--  removed onsubmit="save_order()" -->
-            <p>
-            <label for="compareCustomer">Customer </label><input id="compareCustomer" type="text" >
-            </p>
-            <p>
-            <label for="compareDescription">Description </label>
-            <textarea name="compareDescription" id="compareDescription" rows="2" cols="40" ></textarea>
-            </p>
-            <p>
-            <label for="compareTech">Technician</label><input id="compareTech" type="text" > <!-- removed - value="Unassigned" -->
-            </p>
-            <p>
-            <label for="compareStatus">Status</label>
-             <select name="compareStatus" id="compareStatus">
-                <option value="Open">Open</option>
-                <option value="Closed">Closed</option>
-                <option value="In Process">In Process</option>
-                <option value="Pending">Pending</option>
-             </select>
-            </p>
-            <p>
-            <input type="button" onclick="update_order()" value="Update Order" > <!--  need to write order "update_order()" --> 
-            <input type="button" onclick="delete_order()" value="Delete Order" style="display: inline;"> <!--  need to write order "delete_order()" --> 
-            <input type="button" onClick="location.href='test3.html'" value="Cancel" style="display: inline;"> <!-- change to index.html - when done -->
-            </p>
-        </form>
-    </div>
-   
-</div>
-
-<script src="test.js"></script>
+<script src="scripts.js"></script>
     
 </body>
 </html>
