@@ -1,15 +1,11 @@
-//  CRUD functions:
-//  CRUD -Create
+// Accessibility 
+function access(){
+	document.getElementById("form1-instructions").style.display = "block";
+}
+function no_access() {
+	document.getElementById("form1-instructions").style.display = "none";
+}
 
-// Check to see if data in local storage
-//function is_Initiated() {
-//    if (localStorage.key('initiated')) {
-//        increment = localStorage.getItem('increment');
-//        increment = Number(increment);
-//        // console.log(increment);
-//        // return increment;
-//    }
-//}
 
 //  Returns a string of the current date and time in local time zone
 function date_now() {

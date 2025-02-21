@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test 3</title>
     <style>
+		a, h4, #column-headers {
+		margin:0px;
+		}
         form {
             display: inline-block;
         }
-        #display2{
+        #display2, #form1-instructions{
             display: none;
         }
         .form2 {
@@ -62,7 +65,15 @@
 <body>
 <!-- <h1>The Window Object</h1> -->
 <h2>Simple Work Order </h2>
-
+<a href="#" onclick ="access()"><h4>Accessibility Instructions</h4></a>
+<div id="form1-instructions">
+<a href="#" onclick ="no_access()">Close Instructions</a>
+<p>
+Instructions for using "Simple Work Order". <br>
+This application is used to create and track work orders. Place an order using the form below. Submit the form with the "Create Work Order" button.  <br>
+Open orders are displayed below the form. Orders are displayed until they are deleted. Each open order is inside an "order" label (not visible to non-screen reader users). Each order contains an "order number button" followed by the order date, customer, description(with updates), the technician it is assigned to, and the status of the order. To update or delete an order click on the "order number button". 
+</p>
+</div>
 
 <!-- form 1 -->
 <form id="form1" style="display: block;" onsubmit="save_order()">
@@ -91,7 +102,8 @@
     <p>Required -<span style="color: red;"> *</span></p>
 </form>
 
-<!-- Order Column Headers -->
+<!-- Open Order Column Headers -->
+<h4>Open Orders</h4>
 <div id="column-headers" class="grid-container"> 
 <p><b>Order#</b></p>
 <p><b>Date</b></p>
