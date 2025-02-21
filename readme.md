@@ -43,6 +43,7 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/18/2025 | CRUD-Delete complete -- __CRUD COMPLETE__ -- | 1 |   
 | 2/19/2025 | Add column headings to display | 1 |   
 | 2/20/2025 | Add Accessibility Instructions and tested result | 2 |   
+| 2/21/2025 | Deploy from Main branch - update readme - __Project Complete__ | 1 |   
 
 
 
