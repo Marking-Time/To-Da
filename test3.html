@@ -70,13 +70,19 @@
 <a href="#" onclick ="no_access()">Close Instructions</a>
 <p>
 Instructions for using "Simple Work Order". <br>
-This application is used to create and track work orders. Place an order using the form below. Submit the form with the "Create Work Order" button.  <br>
-Open orders are displayed below the form. Orders are displayed until they are deleted. Each open order is inside an "order" label (not visible to non-screen reader users). Each order contains an "order number button" followed by the order date, customer, description(with updates), the technician it is assigned to, and the status of the order. To update or delete an order click on the "order number button". 
+This application is used to create and track work orders.
+<h4>Create an Order</h4>
+ Place an order using the form below. Submit the form with the "Create Work Order" button.  <br>
+Open orders are displayed below the form. Orders are displayed until they are deleted. Each open order is inside an "order" label (not visible to non-screen reader users). Each order contains an "order number button" followed by the order date, customer, description(with updates), the technician it is assigned to, and the status of the order. To update or delete an order click on the "order number button".
+<h4>Update an Order</h4> 
+After the user clicks on the "order number button" corresponding the the order they wish to update, the order to be updated is listed below. Following the order, is a form that is populated with the data from from the order with the exception of the description field which is blank. Any of the fields can be updated except for the "Order Number" field which is used as a measure of all the work orders that the system has processed. All changes made in the form below are appended to the description, so the user can track the progress of the work done on the order.<br>
+There are three buttons at the bottom of the form.  The first is "Update order" which appends the changes made in the form to the description for progress tracking.  The second is the "Delete" button which removes the the order from the system.  The third is the "Cancel" button which stops the the update operation and displays the first page.
 </p>
 </div>
 
 <!-- form 1 -->
 <form id="form1" style="display: block;" onsubmit="save_order()">
+<h3>Create an Order</h3>
     <p>
     <label for="customer">Customer  <span style="color: red;"> * </span></label><input id="customer" type="text" required>
     </p>
@@ -103,7 +109,7 @@ Open orders are displayed below the form. Orders are displayed until they are de
 </form>
 
 <!-- Open Order Column Headers -->
-<h4>Open Orders</h4>
+<h4 id="open-orders">Open Orders:</h4>
 <div id="column-headers" class="grid-container"> 
 <p><b>Order#</b></p>
 <p><b>Date</b></p>

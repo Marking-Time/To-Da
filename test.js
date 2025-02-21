@@ -133,6 +133,7 @@ function display_data() {
 function update_functon_display(updateClicked) {
     document.getElementById("form1").style.display = "none";
     document.getElementById("hide-display").style.display = "none";
+	document.getElementById("open-orders").style.display = "none";
 	
 	document.getElementById("column-headers").style.display = "none";
 	
@@ -150,7 +151,7 @@ function update_functon_display(updateClicked) {
 
 //  Code to Display "order to update"
     document.getElementById("updateDisplay").innerHTML = 
-    `<h3>Update Order</h3>
+    `<h3>Update Order:</h3>
     <p> Order Number: ${updateOrderNumber}</p>
     <p>Date: ${updateDate}</p>
     <p>Customer: ${updateCustomer}</p>
