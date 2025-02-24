@@ -1,5 +1,41 @@
 # ToDa
-A simple Work Order system using local storage. It is not suitable for production. Probably requires cookies to be allowed. Will not work with browsers that have policies set to prohibit data persistence. Data is stored in the browser and will not persist to other browsers either locally or on the web. See https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage for more details.
+[Live at](https://marking-time.github.io/To-Da/?description=Test&status=Open#)  
+Usage:  To use this offline save it to your local drive and it will run without connection to the internet.
+### Definition
+This is a simple work order system using local storage. It has the following features:  
+
+- Can be used offline without an internet connection because it is a single page application(SPA), however the data will not persist.
+- All the files necessary for running it are in the index.HTML (js and css), so it is easy to install and share.
+- Free and open source - MIT license
+- Minimally styled to allow for changes to the fonts and colors
+- Includes text instructions for screen readers
+- Can run offline
+
+### Suitability/Limitations/Known Issues  
+
+It is not suitable for production. It probably requires cookies to be allowed. Will not work with browsers that have policies set to prohibit data persistence. Data is stored in the browser and will not persist to other browsers either locally, on the web or on other devices. See https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage for more details. It has not been extensively tested, but it does work on the platforms below.
+
+- Windows/Firefox
+- Android/Chrome
+- Android/Duck Duck Go
+
+### Motivation
+I wanted to learn JS and DOM manipulation and building a project is the best way to learn.  It is replicated from some software I used in an IT department that I once worked in.  That software ran on a UNIX mainframe.  I have written this before on the HTML/CSS/PHP/MySQL stack, but that work is lost to history.  
+
+It is a good project for me because I already knew the business logic and simply needed to implement it on a different stack. I made it a SPA because it fits well with my ethos and programming style.
+
+### Goals
+- I wouldn't mind developing this for a business, but that would require paid work for me to implement it. Perhaps adding:
+	- login with view restrictions
+	- the ability to generate reports on the data like work orders completed etc
+- Add the ability to export the data to CSV
+- Better styling
+- using a different storage mechanism than local storage while keeping the offline functionality
+- there is always to to be done :)
+
+
+### Build Log
+This log is included because this project was for me a learning experience, so it makes sense to share what it took for me to learn JS and DOM manipulation.
 
 | Date |     Description          |  Time     |
 | ---- | ------------------------ | --------- |
@@ -44,6 +80,12 @@ A simple Work Order system using local storage. It is not suitable for productio
 | 2/19/2025 | Add column headings to display | 1 |   
 | 2/20/2025 | Add Accessibility Instructions and tested result | 2 |   
 | 2/21/2025 | Deploy from Main branch - update readme - __Project Complete__ | 1 |   
+
+
+
+
+
+
 
 
 
